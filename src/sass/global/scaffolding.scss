@@ -8,3 +8,16 @@
   margin: -1px;
   border: 0;
 }
+
+h1 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}

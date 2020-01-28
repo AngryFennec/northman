@@ -1,16 +1,17 @@
 .page-body {
-  min-width: $mobile-min-width;
+  min-width: 320px;
   padding: 0;
   margin: 0;
   font-size: 18px;
   line-height: 25px;
   font-family: $font-family;
+  background: linear-gradient(79.29deg, #DEE2E5 0%, #F8F8F8 86.07%)
 }
 
 
-@include mobile {
-  .page-body {
-    font-size: 14px;
-    line-height: 17px;
-  }
-}
+// @include mobile {
+//   .page-body {
+//     font-size: 14px;
+//     line-height: 17px;
+//   }
+// }
