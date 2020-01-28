@@ -4,19 +4,9 @@ var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 3000,
   },
-  onSlideChangeStart: function(s) {
-    var currentSlide = (s.slides[s.activeIndex]);
-    var prevSlide = (s.slides[s.previousIndex]);
-    prevSlide.querySelector('img').classList.remove('animated');
-    currentSlide.querySelector('img').classList.add('animated');
-
-
-      },
-      onSlideChangeEnd: function(s) {
-          var currentSlide = (s.slides[s.activeIndex]);
-
-      }
+speed: 1
 });
+
 /*
 mySwiper.on('slideChangeTransitionStart', function () {
   var prev = mySwiper.previousIndex-1;
