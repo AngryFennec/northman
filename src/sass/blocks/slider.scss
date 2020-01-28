@@ -1,0 +1,21 @@
+.slider {
+  width: 1440px;
+  height: 100vh;
+  background-color: #0C1D39;
+  color: #FAFAFA;
+  margin: 0 auto;
+}
+
+.slide-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+ .slider img {
+   width: 50%;
+   height: auto;
+ }
+
+ .swiper-slide {
+   display: flex;
+ }
