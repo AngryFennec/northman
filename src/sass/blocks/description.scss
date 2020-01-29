@@ -1,0 +1,50 @@
+.description {
+    position: relative;
+    width: 100%;
+    // background: linear-gradient(61.34deg, #DEE2E5 0%, #F8F8F8 86.07%);
+    padding-top: 124px;
+    padding-bottom: 120px;
+
+}
+
+.description .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description__decor {
+    position: absolute;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 240px;
+    line-height: 150%;
+    color: $white;
+    top: -25px;
+}
+
+.description__header {
+    width: 100%;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.description__content  {
+    margin-left: 122px;
+    max-width: 420px;
+
+    & p {
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+    }
+}

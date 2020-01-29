@@ -1,0 +1,24 @@
+.skin {
+    margin-top: -119px;
+    position: relative;
+    background: url('../img/skin.jpg.jpg') no-repeat center 0;
+    background-size: cover;
+    height: 100vh;
+    min-height: 780px;
+    display: flex;
+}
+
+.skin__title {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'DM Serif Display';
+    font-size: 72px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: $white;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 150px;
+    align-self: flex-end;
+}

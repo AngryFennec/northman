@@ -8,3 +8,25 @@
   margin: -1px;
   border: 0;
 }
+
+h1 {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+    &:hover {
+      background: linear-gradient(149.15deg, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-image: linear-gradient(to right, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+      -moz-border-image: -moz-linear-gradient(to right, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+      -webkit-border-image: -webkit-linear-gradient(to right, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+      border-image-slice: 1;
+    }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
