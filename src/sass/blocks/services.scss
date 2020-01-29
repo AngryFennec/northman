@@ -17,10 +17,6 @@
     margin: 0;
 }
 
-a {
-    color: linear-gradient(154.84deg, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
-}
-
 .services__list {
     list-style: none;
     margin: 0;
@@ -38,6 +34,16 @@ a {
     & a {
         display: block;
         position: relative;
+
+        &:hover {
+            background: none;
+
+            & .services__title {
+                background: linear-gradient(149.15deg, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
 }
 .services__title {

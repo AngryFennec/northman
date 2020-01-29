@@ -3,6 +3,7 @@
     color: $white;
     padding-top: 130px;
     padding-bottom: 170px;
+    // margin-top: 300px;
 
     & p {
         font-size: 18px;
@@ -34,4 +35,10 @@
     line-height: 150%;
     letter-spacing: 0.035em;
     color: $white;
+
+    &:hover {
+        background: linear-gradient(154.84deg, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
