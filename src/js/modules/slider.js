@@ -1,20 +1,26 @@
-var mySwiper = new Swiper('.swiper-container', {
-
-  loop: true,
-  autoplay: {
-    delay: 3000,
-  },
-speed: 1
-});
-
+//var mySwiper = new Swiper('.swiper-container', {
 /*
-mySwiper.on('slideChangeTransitionStart', function () {
-  var prev = mySwiper.previousIndex-1;
-  var next = mySwiper.activeIndex;
-  var prevSlide = mySwiper.slides[prev];
-  var nextSlide = mySwiper.slides[next];
-  prevSlide.querySelector('img').classList.remove('animated');
-  nextSlide.querySelector('img').classList.add('animated');
-  console.log(nextSlide);
+  direction: 'vertical',
+          slidesPerView: 1,
+          spaceBetween: 50,
+          mousewheel: {
+            sensitivity: 100,
+          },
+speed: 1,
+
 });
+
+console.log(mySwiper.mousewheel.enabled);
 */
+var swiper = new Swiper('.swiper-container', {
+       pagination: '.swiper-pagination',
+       direction: 'vertical',
+       slidesPerView: 1,
+       paginationClickable: true,
+       mousewheelControl: true,
+       parallax: true,
+       speed: 600,
+centeredSlides: true,
+
+
+   });
