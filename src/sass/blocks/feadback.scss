@@ -1,3 +1,6 @@
+.feadback {
+    color: $text-color;
+}
 .feadback__header {
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -5,13 +8,16 @@
     font-size: 64px;
     line-height: 150%;
     letter-spacing: 0.035em;
-    color: #0C1D39;
+
     margin-bottom: 110px;
 }
 
 .feadback__form {
+    margin-bottom: 80px;
+}
+
+.feadback__wrapper {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .feadback__fields {
@@ -27,9 +33,9 @@
     box-shadow: none;
     border: none;
     border-bottom: 1px solid #0C1D39;
-    width: 510px;
+    width: 540px;
     height: 20px;
-    margin-bottom: 46px;
+    margin-bottom: 54px;
     padding-bottom: 0;
 }
 
@@ -38,30 +44,65 @@
 }
 
 .feadback__text-block {
-    margin-left: 150px;
-    & span {
-        display: block;
-        margin-bottom: 44px;
-    }
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 58px;
+}
+.feadback__schedule span {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 5px;
+    letter-spacing: 0.03em;
+}
 
-    & a {
-        font-family: 'DM Serif Display';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 150%;
-        /* or 45px */
+.feadback__schedule a {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    /* or 45px */
 
-        letter-spacing: 0.035em;
+    letter-spacing: 0.035em;
 
-        color: #0C1D39;
-        border-bottom : 1px solid #0C1D39;
+    color: $text-color;
+    border-bottom : 1px solid $text-color;
 
-        &:first-of-type {
-            margin-right: 94px;
-        }
+    &:first-of-type {
+        margin-right: 100px;
     }
 }
+.feadback__contacts span {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+}
+.feadback__contacts a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    /* or 30px */
+
+    letter-spacing: 0.035em;
+    color: inherit;
+
+    &:first-of-type {
+        margin-right: 87px;
+    }
+
+    &:last-of-type {
+        border-bottom: 1px solid $text-color;
+    }
+}
+
 
 .feadback__button {
     font-family: 'DM Serif Display';
@@ -78,6 +119,8 @@
     box-shadow: none;
     border: none;
     border-bottom: 1px solid #0C1D39;
+    padding: 0;
+    margin-top: 12px;
 
 }
 

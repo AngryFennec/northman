@@ -1,11 +1,15 @@
 .skin {
-    margin-top: -119px;
-    position: relative;
+    margin-top: -125px;
+    // position: relative;
     background: url('../img/skin.jpg.jpg') no-repeat center 0;
     background-size: cover;
     height: 100vh;
     min-height: 780px;
     display: flex;
+
+    &--main {
+        background-image: url('../img/skin-main.jpg');
+    }
 }
 
 .skin__title {
@@ -21,4 +25,34 @@
     padding: 0 20px;
     margin-bottom: 150px;
     align-self: flex-end;
+}
+
+.skin__social-list {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+.skin--main .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skin--main .skin__title {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 64px;
+    line-height: 150%;
+    letter-spacing: 0.035em;
+}
+
+.skin__info {
+    margin: 0;
+    color: $white;
+    font-size: 18px;
+    line-height: 150%;
+    margin-top: 5px;
 }

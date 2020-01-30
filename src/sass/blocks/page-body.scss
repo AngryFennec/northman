@@ -5,10 +5,13 @@
   font-size: 18px;
   line-height: 25px;
   font-family: $font-family;
-  background: linear-gradient(79.29deg, #DEE2E5 0%, #F8F8F8 86.07%)
+  background: linear-gradient(77.26deg, #DEE2E5 0%, #F8F8F8 86.07%);
+  position: relative;
 }
 
-
+.page-body .decor {
+  bottom: -10px;
+}
 // @include mobile {
 //   .page-body {
 //     font-size: 14px;
