@@ -1,6 +1,6 @@
 .social-list {
     display: flex;
-    width: 140px;
+    width: 130px;
     justify-content: space-between;
     list-style: none;
     margin: 0;
@@ -12,5 +12,6 @@
         font-size: 12px;
         line-height: 14px;
         text-transform: uppercase;
+        color: $white;
     }
 }

@@ -1,0 +1,19 @@
+.decor {
+    position: absolute;
+    width: auto;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 240px;
+    line-height: 150%;
+/* identical to box height, or 360px */
+
+    letter-spacing: 0.025em;
+
+    opacity: 0.6;
+    color: $white;
+    z-index: -1;
+}
