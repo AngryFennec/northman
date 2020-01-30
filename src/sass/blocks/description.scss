@@ -48,3 +48,22 @@
         letter-spacing: 0.03em;
     }
 }
+
+.description__img-block {
+    width: 540px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    & img {
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+
+    &:hover img {
+        transition: 0.5s;
+        transform: scale(1);
+    }
+}

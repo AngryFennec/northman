@@ -3,13 +3,6 @@
     color: $white;
     padding-top: 130px;
     padding-bottom: 170px;
-    // margin-top: 300px;
-
-    & p {
-        font-size: 18px;
-        line-height: 150%;
-        letter-spacing: 0.025em;
-    }
 }
 
 .process__header {
@@ -20,12 +13,18 @@
     margin-top: 0;
 }
 
-.process__list {
+.process__video-list,
+.process__text-list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.process__text-list {
+margin-bottom: 95px;
 }
 
 .process__portfolio-link {
@@ -35,10 +34,59 @@
     line-height: 150%;
     letter-spacing: 0.035em;
     color: $white;
+    border-bottom: 1px solid $white;
+}
 
-    &:hover {
-        background: linear-gradient(154.84deg, #1A52FB 0%, #B67FD3 50.4%, #FEBED9 90.44%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+.process__item{
+    max-width: 360px;
+    & h3 {
+        margin-top: -10px;
+        font-family: 'DM Serif Display';
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 120%;
+        letter-spacing: 0.025em;
+        max-width: 390px;
+    }
+
+    & a {
+        display: block;
+        width: 360px;
+        height: 228px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+
+        & img {
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+        &::after {
+            content:"";
+            position: absolute;
+            width: 74px;
+            height: 74px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url('../img/play-button.svg') no-repeat 0 0;
+        }
+
+        &:hover img {
+            transition: 0.5s;
+            transform: scale(1);
+        }
+
+        & p {
+            font-size: 18px;
+line-height: 150%;
+/* or 27px */
+
+letter-spacing: 0.025em;
+        }
     }
 }
