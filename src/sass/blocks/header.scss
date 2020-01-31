@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 .header__portfolio-link {
@@ -36,20 +37,36 @@
     }
 }
 
-@media (max-width: 500px) {
-    .header__logo-block {
-        order: -1;
-    }
+.header__burder {
+    display: none;
+}
 
-    .header__portfolio-link {
-        display: none;
+@media (max-width: 768px) {
+    .header__burder {
+        display: block;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        position: relative;
+        z-index: 4;
     }
 
     .header__lang-list {
-        min-width: 100px;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $text-color;
+        min-width: 80px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        text-align: center;
     }
 
-    .header__logo {
-        width: 130px;
+    .header__portfolio-link {
+        position: absolute;
+        top: 620px;
+        right: 20px;
+        text-align: right;
     }
 }
