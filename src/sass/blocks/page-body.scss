@@ -10,11 +10,12 @@
 }
 
 .page-body .decor {
-  bottom: -10px;
+  bottom: 50px;
 }
-// @include mobile {
-//   .page-body {
-//     font-size: 14px;
-//     line-height: 17px;
-//   }
-// }
+
+@media (max-width: 500px) {
+  .page-body .decor {
+    bottom: 20px;
+    opacity: 0.4;
+  }
+}

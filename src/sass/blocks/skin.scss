@@ -1,6 +1,5 @@
 .skin {
     margin-top: -125px;
-    // position: relative;
     background: url('../img/skin.jpg.jpg') no-repeat center 0;
     background-size: cover;
     height: 100vh;
@@ -9,6 +8,22 @@
 
     &--main {
         background-image: url('../img/skin-main.jpg');
+    }
+
+    &--360 {
+        background-image: url('../img/skin-360.jpg');
+    }
+
+    &--vr{
+        background-image: url('../img/skin-vr.jpg');
+    }
+
+    &--drone{
+        background-image: url('../img/skin-dron.jpg');
+    }
+
+    &--3d{
+        background-image: url('../img/skin-3d.jpg');
     }
 }
 
@@ -55,4 +70,69 @@
     font-size: 18px;
     line-height: 150%;
     margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+    .skin__title {
+        font-size: 55px;
+    }
+    .skin--main {
+       & .skin__title {
+        font-size: 55px;
+       }
+    }
+ }
+
+@media (max-width: 768px) {
+
+   .skin {
+       min-height: 667px;
+       height: 667px;
+   }
+
+   .skin__social-list {
+       bottom: 20px
+   }
+
+   .skin--main {
+    & .skin__title {
+     font-size: 35px;
+    }
+
+    & .skin__info {
+        font-size: 16px;
+       }
+ }
+ .skin__title {
+     margin: 0;
+    font-size: 35px;
+    align-self: center;
+}
+}
+
+@media (max-width: 500px) {
+    .skin--main {
+        background-image: url('../img/skin-main-mob.jpg');
+
+     & .skin__title {
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+ 
+     & .skin__info {
+        max-width: 250px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 150%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    }
+
+    .skin__title {
+        line-height: 120%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
