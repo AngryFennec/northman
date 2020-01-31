@@ -1,5 +1,7 @@
 .feadback {
     color: $text-color;
+    display: flex;
+    flex-direction: column;
 }
 .feadback__header {
     font-family: 'DM Serif Display';
@@ -22,7 +24,7 @@
 
 .feadback__fields {
     padding-top: 10px;
-    width: 50%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
 
@@ -33,7 +35,9 @@
     box-shadow: none;
     border: none;
     border-bottom: 1px solid #0C1D39;
-    width: 540px;
+    width: 100%;
+    max-width: 540px;
+    min-width: 540px;
     height: 20px;
     margin-bottom: 54px;
     padding-bottom: 0;
@@ -47,7 +51,7 @@
     margin-left: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 58px;
+    margin-left: 118px;
 }
 .feadback__schedule span {
     display: block;
@@ -129,4 +133,98 @@
     margin-left: auto;
     margin-top: -30px;
     margin-bottom: 80px;
+}
+
+@media (max-width: 1440px) {
+    .feadback__header {
+        margin-top: 3.7vw;
+        margin-bottom: 7.63vw;
+    }
+
+    .feadback__text-block {
+        margin-left: 8.19vw;
+    }
+}
+
+@media (max-width: 1240px) {
+    .feadback__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feadback__header {
+        margin-top: 3.7vw;
+        margin-bottom: 7.63vw;
+    }
+
+    .feadback__text-block {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .feadback__fields {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .feadback__field {
+
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+    }
+
+    .feadback__button-wraper {
+        margin-bottom: 75px;
+   }
+
+
+    .feadback__wrapper span {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feadback__header {
+            font-size: 36px;
+            line-height: 125%;
+
+   }
+   .feadback__contacts a {
+
+
+        &:first-of-type {
+            margin-right: 20px;
+        }
+    }
+    .feadback__schedule a {
+        &:first-of-type {
+            margin-right: 30px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .feadback__field {
+        min-width: 280px;
+    }
+
+    .feadback__header {
+        margin-top: 75px;
+        margin-bottom: 50px;
+    }
+    .feadback__schedule a {
+       font-size: 20px;
+    }
+
+    .feadback__contacts {
+        display: flex;
+        flex-direction: column;
+
+        & a {
+            align-self: flex-start;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
 }
