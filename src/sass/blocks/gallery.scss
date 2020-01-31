@@ -1,0 +1,88 @@
+.gallery {
+  background-color: #0C1D39;
+}
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery__item-text {
+  width: 50%;
+  & h3 {
+    font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 120%;
+/* or 77px */
+color: $white;
+
+letter-spacing: 0.035em;
+  }
+  & p {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+color: $white;
+/* or 24px */
+
+letter-spacing: 0.03em;
+margin-left: 15%;
+  }
+  & a {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    /* identical to box height, or 45px */
+
+    letter-spacing: 0.035em;
+margin-left: 15%;
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+}
+
+.gallery__item {
+  display: flex;
+  padding-left: 8%;
+
+}
+.gallery__img {
+  margin-left: 120px;
+  &:hover img {
+        transition: 0.5s;
+        transform: scale(0.9);
+  }
+  & img {
+    transform: scale(1);
+    transition: 0.5s;
+  }
+}
+
+.gallery__more {
+
+  display: block;
+  text-align: center;
+  margin-bottom: 120px;
+  & a {
+  font-family: DM Serif Display;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 150%;
+/* identical to box height, or 45px */
+
+letter-spacing: 0.035em;
+color: $white;
+
+
+
+    border-bottom: 1px solid $white;
+}
+
+}
