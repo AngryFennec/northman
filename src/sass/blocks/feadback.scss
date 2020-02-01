@@ -72,7 +72,7 @@
 
     letter-spacing: 0.035em;
 
-    color: $text-color;
+    color: inherit;
     border-bottom : 1px solid $text-color;
 
     &:first-of-type {
@@ -118,7 +118,7 @@
 
     letter-spacing: 0.035em;
 
-    color: #0C1D39;
+    color: inherit;
     background: transparent;
     box-shadow: none;
     border: none;

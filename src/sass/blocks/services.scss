@@ -1,5 +1,6 @@
 .services {
     padding-top: 130px;
+    color: $text-color;
 }
 
 .services__header {
@@ -9,7 +10,7 @@
     font-size: 50px;
     line-height: 150%;
     letter-spacing: 0.035em;
-    color: #0C1D39;
+    color: inherit;
     margin: 0;
 }
 
@@ -25,7 +26,6 @@
 }
 
 .services__item {
-
     display: flex;
 
     & a {
@@ -34,18 +34,16 @@
         color: $text-color;
 
         &:hover {
-            // background: $text-color;
-            // -webkit-background-clip: text;
             -webkit-text-fill-color: $text-color;;
             & .services__item-arrow,
             .services__item-header {
                 transition: 0.7s;
                 opacity: 1;
-                color: $text-color;
+                color: inherit;
             }
 
             & h3 {
-                color: $text-color;
+                color: inherit;
                 border-bottom: 1px solid $text-color;
             }
 
@@ -124,6 +122,47 @@
         transform: scale(1.1);
     }
 }
+
+.services__menu {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & a {
+        color: white;
+        border-bottom: 1px solid white;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &--up {
+        margin-bottom: 20px;
+        & a {
+            color: #B9B9B9;
+            border-bottom: 1px solid transparent;
+    
+            &:hover {
+                color: white;
+                -webkit-text-fill-color: white;
+                border-color: white;
+                border-image-slice: none;
+                border-image: none;
+            }
+        }
+    }
+  
+
+    
+    & a:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+
+.services__menu-select {
+    display: none;
+}
 @media (max-width: 1440px) {
     .services {
         padding-top: 9vw;
@@ -147,9 +186,26 @@
 }
 
 @media (max-width: 768px) {
+    .services__menu {
+        display: none;
+    }
+
+    .services__menu-select {
+        display: block;
+    }
+
     .services__header {
         font-size: 36px;
         line-height: 125%;
+    }
+
+    .services__menu {
+
+        margin-top: 0;
+
+        &--up {
+            margin-top: 50px;
+        }
     }
 }
 
