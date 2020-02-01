@@ -1,11 +1,15 @@
 .gallery {
   background-color: #0C1D39;
+  overflow:hidden;
 }
 .swiper-container {
+  padding-top: 200px;
     width: 100%;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+
 }
 .gallery__item-text {
   width: 50%;
