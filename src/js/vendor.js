@@ -7,3 +7,4 @@
 //= vendor/jquery.js
 //= vendor/jquery.fancybox.js
 //= vendor/swiper.js
+//= vendor/slick.js
