@@ -3,5 +3,7 @@
  * //= modules/file.js
  */
 
-//= modules/sample.js
+//= modules/pages.js
 //= modules/main-slider.js
+//= modules/portfolio.js
+//= modules/header.js
