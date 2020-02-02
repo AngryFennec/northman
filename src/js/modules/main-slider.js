@@ -5,11 +5,10 @@
        mousewheelControl: true,
        parallax: true,
        speed: 600,
-centeredSlides: true,
     onlyExternal:true
    });
 
-var miniSwipers = Array.from(document.querySelectorAll('.gallery__slider .swiper-container'));
+var miniSwipers = Array.from(document.querySelectorAll('.gallery__img--slider .swiper-container'));
 var jsMiniSwipers = [];
 if (miniSwipers.length !== 0) {
 
@@ -17,8 +16,8 @@ if (miniSwipers.length !== 0) {
 
     jsMiniSwipers.push(new Swiper(item, {
     pagination: {
-      el: '.swiper-pagination',
-      type: 'progressbar',
+      el: '.gallery__img--slider .swiper-pagination',
+      //type: 'progressbar',
     },
     //onlyExternal:true
   }));
