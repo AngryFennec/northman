@@ -14,7 +14,7 @@
     margin-bottom: 110px;
 }
 
-.feadback__form {
+.wpcf7-form {
     margin-bottom: 80px;
 }
 
@@ -181,6 +181,10 @@
 
     .feadback__wrapper span {
         margin-bottom: 30px;
+    }
+
+    .feadback__wrapper .wpcf7-form-control-wrap {
+        margin-bottom: 0;
     }
 }
 
