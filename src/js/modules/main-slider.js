@@ -1,4 +1,5 @@
 (function() {
+  /*
   var swiper = new Swiper('.gallery__main-slider', {
        direction: 'vertical',
        slidesPerView: 1.5,
@@ -7,7 +8,7 @@
        speed: 600,
     onlyExternal:true
    });
-
+*/
 var miniSwipers = Array.from(document.querySelectorAll('.gallery__img--slider .swiper-container'));
 var jsMiniSwipers = [];
 if (miniSwipers.length !== 0) {
