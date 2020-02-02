@@ -22,13 +22,14 @@
     margin: 0 auto;
 }
 
-.header__lang-list {
+.header ul {
     list-style: none;
     margin: 0;
     padding: 0;
     min-width: 130px;
     display: flex;
     justify-content: space-between;
+    text-transform: uppercase;
 
     & a {
         font-size: 14px;
