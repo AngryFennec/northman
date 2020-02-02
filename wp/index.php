@@ -1,51 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <title>Northman</title>
-
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body class="page-body">
-  <span class="decor decor--big">Nortman VR</span>
-  <h1>Northman</h1>
-  <header class="header">
-    <nav class="header__menu">
-      <a href="#" class="header__portfolio-link">Our Portfolio</a>
-      <div class="header__logo-block">
-        <img class="header__logo" src="img/logo.svg">
-      </div>
-      <ul>	
-        <li class="lang-item lang-item-2 lang-item-en lang-item-first current-lang"><a lang="en-US" hreflang="en-US" href="http://logvinb9.beget.tech/wp/virtual-reality/">en</a></li>
-        <li class="lang-item lang-item-5 lang-item-fi"><a lang="fi" hreflang="fi" href="http://logvinb9.beget.tech/wp/virtual-reality-2/">fi</a></li>
-        <li class="lang-item lang-item-9 lang-item-sv"><a lang="sv-SE" hreflang="sv-SE" href="http://logvinb9.beget.tech/wp/virtual-reality-3/">sv</a></li>
-        <li class="lang-item lang-item-13 lang-item-no"><a lang="nb-NO" hreflang="nb-NO" href="http://logvinb9.beget.tech/wp/virtual-reality-4/">no</a></li>
-      </ul>
-      <!-- <ul class="header__lang-list">
-        <li class="header__lang"><a href="?lang=en">EN</a></li>
-        <li class="header__lang"><a href="?lang=sv">SV</a></li>
-        <li class="header__lang"><a href="?lang=fi">FI</a></li>
-        <li class="header__lang"><a href="?lang=no">NO</a></li>
-      </ul> -->
-      <button class="header__burder" type="button"><img src="img/burger.svg" alt=""></button>
-    </nav>
-  </header>
+<?php get_header();?>
   <main class="main">
     <section class="skin skin--main">
       <div class="wrapper">
         <div class="skin__text-block">
           <h2 class="skin__title">Digital studio Northman&nbsp;VR</h2>
           <p class="skin__info">Immersive content for&nbsp;contemporary audience</p>
-
-
-            <img class="wheel" src="img/wheel.png" alt="">
-
-
-
+            <img class="wheel" src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>wheel.png" alt="">
         </div>
         <ul class="skin__social-list social-list">
           <li><a href="#">FB</a></li>
@@ -58,7 +18,6 @@
     <section class="about">
       <span class="about__decor decor">Nortman VR</span>
       <div class="wrapper">
-
         <h2 class="about__title">
           <span class="about__main-title">We are – </span>
           <span class="about__subtitle">based in Stockholm, we deliver an innovative approach to Virtual Reality to businesses all over Scandinavia and Northern Europe.</span>
@@ -123,7 +82,7 @@
                   <a href="#">Learn more</a>
                 </div>
                 <div class="gallery__img">
-                  <img src="img/gallery-3.png" width=720 height=480 alt="picture">
+                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-3.png" width=720 height=480 alt="picture">
                 </div>
               </div>
             </div>
@@ -136,7 +95,7 @@
                   <a href="#">Learn more</a>
                 </div>
                 <div class="gallery__img">
-                  <img src="img/gallery-4.png" width=720 height=480 alt="picture">
+                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-4.png" width=720 height=480 alt="picture">
                 </div>
               </div>
             </div>
@@ -148,7 +107,7 @@
                   <a href="#">Learn more</a>
                 </div>
                 <div class="gallery__img">
-                  <img src="img/gallery-5.png" width=720 height=480 alt="picture">
+                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-5.png" width=720 height=480 alt="picture">
                 </div>
               </div>
             </div>
@@ -163,77 +122,32 @@
       <div class="wrapper">
         <h2 class="friends__title">Our friends</h2>
         <ul class="friends__list">
-          <li class="friends__item"><img src="img/Colliers logo (1).png" alt=""></li>
-          <li class="friends__item"><img src="img/Helsinki logo (1).png" alt=""></li>
-          <li class="friends__item"><img src="img/Colliers logo (1).png" alt=""></li>
-          <li class="friends__item"><img src="img/Cityvarasto-logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/Veho logo 1.png" alt=""></li>
-          <li class="friends__item"><img src="img/Bagel street LOGO.png" alt=""></li>
-          <li class="friends__item"><img src="img/Varma logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/Hankkija logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/Thon property logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/University Logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/realia logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/tampere.png" alt=""></li>
-          <li class="friends__item"><img src="img/24 storage logo.png" alt=""></li>
-          <li class="friends__item"><img src="img/kirkko 1.png" alt=""></li>
-          <li class="friends__item"><img src="img/SAMK-logo_imagelarge.png" alt=""></li>
-          <li class="friends__item"><img src="img/Metsä.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Colliers logo (1).png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Helsinki logo (1).png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>bergendal 2.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Cityvarasto-logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Veho logo 1.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Bagel street LOGO.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Varma logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Hankkija logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Thon property logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>University Logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>realia logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>tampere.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>24 storage logo.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>kirkko 1.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>SAMK-logo_imagelarge.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Metsä.png" alt=""></li>
         </ul>
       </div>
     </section>
     <section class="feadback">
       <div class="wrapper">
-        <h2 class="feadback__header">Let’s discuss your project</h2>
-        <form class="feadback__form" action="#">
-          <div class="feadback__wrapper">
-            <div class="feadback__fields">
-              <label for="name" class="visually-hidden">Your Name</label>
-              <input type="text" class="feadback__field" id="name" name="name" placeholder="Name">
-              <label for="email" class="visually-hidden">Your Email</label>
-              <input type="text" class="feadback__field" id="email" name="email" placeholder="Email">
-              <label for="message" class="visually-hidden">Your Message</label>
-              <input type="text" class="feadback__field" id="message" name="message" placeholder="How can we help you">
-              <div class="feadback__button-wraper">
-                <button class="feadback__button" type="submit">Send</button>
-              </div>
-            </div>
-            <div class="feadback__text-block">
-              <div class="feadback__schedule">
-                <span>schedule a call for:</span>
-                <a href="">15 minutes</a><a href="">30 minutes</a>
-              </div>
-              <div class="feadback__contacts">
-                <span>or contact us:</span>
-                <a href="">+46&nbsp;70&nbsp;847&nbsp;8122</a><a href="">info@virtualnorthman.com</a>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- <div class="feadback__button-wraper">
-            <button class="feadback__button" type="submit">Send</button>
-          </div> -->
-
-
-        </form>
+        <h2 class="feadback__header"><?php pll_e('Let’s discuss your project'); ?></h2>
+		<?php echo do_shortcode( '[cf7form cf7key="contact-form-1"]' ); ?>
+		
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="wrapper">
-      <ul class="footer__social-list social-list">
-        <li><a href="#">FB</a></li>
-        <li><a href="#">IG</a></li>
-        <li><a href="#">YT</a></li>
-        <li><a href="#">LN</a></li>
-      </ul>
-      <a class="footer__logo" href="/"><img src="img/logo-dark.svg" alt="logo"></a>
-      <a href="">Privacy Policy</a>
-    </div>
-  </footer>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
-</body>
 
-</html>
+  <?php get_footer();?>
