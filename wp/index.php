@@ -3,33 +3,27 @@
     <section class="skin skin--main">
       <div class="wrapper">
         <div class="skin__text-block">
-          <h2 class="skin__title">Digital studio Northman&nbsp;VR</h2>
-          <p class="skin__info">Immersive content for&nbsp;contemporary audience</p>
-            <img class="wheel" src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>wheel.png" alt="">
+          <h2 class="skin__title"><?php the_field('main_title');?></h2>
+          <p class="skin__info"><?php the_field('main_info');?></p>
+            <img class="wheel" src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>wheel.png" alt="text">
         </div>
         <ul class="skin__social-list social-list">
-          <li><a href="#">FB</a></li>
-          <li><a href="#">IG</a></li>
-          <li><a href="#">YT</a></li>
-          <li><a href="#">LN</a></li>
+        <li><a href="//www.facebook.com/virtualnorthman/">FB</a></li>
+        <li><a href="//www.instagram.com/virtualnorthman/">IG</a></li>
+        <li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg">YT</a></li>
+        <li><a href="//www.linkedin.com/company/digital-northman-ab/">LN</a></li>
         </ul>
       </div>
     </section>
     <section class="about">
-      <span class="about__decor decor">Nortman VR</span>
+      <span class="about__decor decor"><?php the_field('description__decor');?></span>
       <div class="wrapper">
         <h2 class="about__title">
-          <span class="about__main-title">We are – </span>
-          <span class="about__subtitle">based in Stockholm, we deliver an innovative approach to Virtual Reality to businesses all over Scandinavia and Northern Europe.</span>
+          <span class="about__main-title"><?php the_field('description_title');?></span>
+          <span class="about__subtitle"><?php the_field('about_subtitle');?></span>
         </h2>
-        <div class="about__content">
-          <p>A truly modern all-around digital agency, we specialise in immersive 360-degree content. Some of our many services include: Virtual Reality, 360-degree videos and interactive virtual tours.</p>
-          <p>Our client list encompasses a broad spectrum of industries, including museums, public institutions, hospitality businesses, and retail businesses.</p>
-          <p>Customer satisfaction and trustworthiness are values we keep at the forefront every single day, and we strive to deliver the best product the market has to offer for all of our clients. </p>
-          <p>We work side by side with our customers to ensure we’re delivering products to their exact specifications. Work with us to see the difference that our industry experience, innovative talent, agility, and top-notch customer service can
-            make for your digital marketing needs.</p>
-        </div>
-        <a href="/portfolio/" class="about__portfolio-link"> See the examples</a>
+        <div class="about__content"><?php the_field('description_content');?></div>
+        <a href="/our-portfolio/" class="about__portfolio-link"><?php the_field('about_link-text');?></a>
       </div>
     </section>
     <section class="gallery">
@@ -120,7 +114,7 @@
     </section>
     <section class="friends">
       <div class="wrapper">
-        <h2 class="friends__title">Our friends</h2>
+        <h2 class="friends__title"><?php the_field('friends_title');?></h2>
         <ul class="friends__list">
           <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Colliers logo (1).png" alt=""></li>
           <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Helsinki logo (1).png" alt=""></li>
@@ -148,6 +142,17 @@
 		
       </div>
     </section>
+    <style>
+        .skin--main {
+          background: url('<?php the_field('skin');?>') no-repeat center 0; 
+          background-size: cover; 
+        }
+        @media(max-width: 500px){
+          .skin--main {
+            background-image: url('<?php the_field('skin_mob');?>')}
+          }
+        }
+          </style>
   </main>
 
   <?php get_footer();?>
