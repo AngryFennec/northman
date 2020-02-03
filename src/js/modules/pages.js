@@ -2,34 +2,39 @@
 
 
 (function () {
-  if ($('.process')[0]) {
-    var processTop = $('.process').offset().top - 300;
-    $('.process').css('opacity', 0);
-    $('.process').css('padding-top', '1000px');
-    var flag = 0
+  console.log('Here is your code');
 
-     $(window).on('scroll', function (){
-      if (($(window).scrollTop() > processTop && $(window).scrollTop() < (processTop + 300)) && flag === 0) {
+  $('.process').css('opacity', 0);
+  $('.process').css('padding-top', 2000);
+  $('.process').css('background', 'transparent');
+  var processTop = $('.process').offset().top - 400;
+  var flag = 0;
 
-        // $('.description').css('background-color', '');
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop()  >  processTop) {
+      if (flag === 0) {
         $('.page-body').addClass('color');
-        $('.page-body').addClass('padding');
-        
-
-
-
+        $('.process').addClass('color');
         $( ".process" ).animate({
-                    'opacity': 1,
-                    // 'padding-top': '100px'
-                  }, 1000, function() {
-                    flag=1;
-                  });
-      } else {
-        $('.page-body').removeClass('color');
+          opacity: 1,
+        }, 100, function() {
+          // Animation complete.
+        });
+       
+        $('.process').css('background', '#0C1D39');
+          $( ".process" ).animate({
+            'padding-top': 100,
+          }, 1000, function() {
+            flag = 1,
+            $('.page-body').removeClass('color');
+
+          });
+          $(document).scrollTop($('.process').offset().top);
+          
+            // setTimeout(function(){flag = 1}, 500);
       }
-     })
-  }
 
-
+    }
+  })
 
 })();
