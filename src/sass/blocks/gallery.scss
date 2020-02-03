@@ -1,5 +1,7 @@
 .gallery {
-  background-color: #0C1D39;
+  background-color: #0c1d39;
+  padding-top: 140px;
+  width: 100%;
 //  overflow:hidden;
 }
 .gallery__main-slider.swiper-container {
@@ -18,7 +20,7 @@
 }
 
 .swiper-slide {
-  margin-bottom: 240px;
+  padding-bottom: 240px;
   background-color: #0c1d39;
 
 
@@ -28,6 +30,7 @@
 }
 .gallery__item-text {
   width: 50%;
+  min-width: 360px;
   & h3 {
     font-family: 'DM Serif Display';
 font-style: normal;
@@ -36,6 +39,7 @@ font-size: 64px;
 line-height: 120%;
 /* or 77px */
 color: $white;
+
 
 letter-spacing: 0.035em;
   }
@@ -89,18 +93,30 @@ margin-left: 15%;
     //overflow: hidden;
   }
   &--slider {
-    //height: 600px;
+    height: 600px;
+    width: 720px!important;
     position: relative;
-    & .swiper-wrapper {
-      overflow: hidden;
-    }
     &.swiper-slide {
-
       margin-bottom: 0;
     }
     & .swiper-pagination {
-      top: 30px;
+      top: 90%;
     }
+
+
+    .swiper-container-horizontal > .swiper-pagination-progressbar{
+      width: 150px;
+      background: #FAFAFA;
+      height: 1px;
+      margin-left: 35px;
+
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      height: 2px;
+      background: #FAFAFA;
+      margin-top: -2px;
+    }
+
   }
 
 }
@@ -109,9 +125,11 @@ margin-left: 15%;
 z-index: 0;
   display: block;
   text-align: center;
+  margin-bottom: 165px;
 margin-top: 120px;
-  & a {
-  font-family: DM Serif Display;
+
+& a {
+font-family: DM Serif Display;
 font-style: normal;
 font-weight: normal;
 font-size: 30px;
@@ -123,7 +141,39 @@ color: $white;
 
 
 
-    border-bottom: 1px solid $white;
+  border-bottom: 1px solid $white;
 }
 
+}
+
+.js-current {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+
+letter-spacing: 0.035em;
+
+color: #FAFAFA;
+position: absolute;
+z-index: 20;
+top: 87%;
+}
+.js-all {
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 150%;
+/* identical to box height, or 36px */
+
+letter-spacing: 0.035em;
+
+color: #FAFAFA;
+position: absolute;
+z-index: 20;
+top: 87%;
+left: 200px;
 }

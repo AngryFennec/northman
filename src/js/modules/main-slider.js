@@ -1,6 +1,6 @@
 (function() {
-  /*
-  var swiper = new Swiper('.gallery__main-slider', {
+
+/*  var swiper = new Swiper('.gallery__main-slider', {
        direction: 'vertical',
        slidesPerView: 1.5,
        mousewheelControl: true,
@@ -9,22 +9,20 @@
     onlyExternal:true
    });
 */
-var miniSwipers = Array.from(document.querySelectorAll('.gallery__img--slider .swiper-container'));
-var jsMiniSwipers = [];
-if (miniSwipers.length !== 0) {
-
-  miniSwipers.forEach(function(item, i) {
-
-    jsMiniSwipers.push(new Swiper(item, {
-    pagination: {
-      el: '.gallery__img--slider .swiper-pagination',
-      //type: 'progressbar',
-    },
-    //onlyExternal:true
-  }));
+var firstSwiper = new Swiper('.js-gallery-first .swiper-container', {
+pagination: {
+  el: '.swiper-pagination-first',
+    type: 'progressbar',
+},
+//onlyExternal:true
 });
-
-}
+var secondSwiper = new Swiper('.js-gallery-second .swiper-container', {
+pagination: {
+  el: '.swiper-pagination-second',
+  type: 'progressbar',
+},
+//onlyExternal:true
+});
 })();
 /*
 const $slider = $("#slider");
