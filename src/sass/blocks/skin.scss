@@ -5,6 +5,8 @@
     height: 100vh;
     min-height: 780px;
     display: flex;
+    position: relative;
+    overflow: hidden;
 
     &--main {
         background-image: url('../img/skin-main.jpg');
