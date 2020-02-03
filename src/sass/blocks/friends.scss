@@ -1,6 +1,6 @@
 .friends {
     padding-top: 170px;
-    padding-bottom:130px;
+    padding-bottom:40px;
 }
 
 .friends__list {
@@ -12,7 +12,7 @@
     justify-content: space-between;
     padding-left: 40px;
     margin-left: 80px;
-    border-image-slice: 1;
+
     padding-right: 90px;
 }
 
@@ -83,7 +83,7 @@
 @media (max-width: 1440px) {
     .friends {
         padding-top: 11.8vw;
-        padding-bottom: 9.1vw;
+        padding-bottom: 3.1vw;
     }
 
     .friends .friends__list img {
@@ -102,7 +102,7 @@
 @media (max-width: 1440px) {
     .friends {
         padding-top: 11.8vw;
-        padding-bottom: 9.1vw;
+        padding-bottom: 3.1vw;
     }
 
     .friends .friends__list {
@@ -128,7 +128,7 @@
 @media (max-width: 500px) {
     .friends {
         padding-top: 75px;
-        padding-bottom: 75px;
+        padding-bottom: 30px;
     }
 
     .friends .friends__list {

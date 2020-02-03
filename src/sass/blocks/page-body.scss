@@ -9,6 +9,10 @@
   position: relative;
 }
 
+.color {
+  transition: background 0.1s linear;
+  background: $text-color;
+}
 .page-body .decor {
   bottom: 50px;
 }
@@ -22,6 +26,7 @@
 
   & .feadback {
     color: $white;
+    border: none;
 
     & a {
       border-color: $white !important;

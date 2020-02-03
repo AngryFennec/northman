@@ -196,6 +196,16 @@
 
         & a{
             width: 100%;
+
+            & .services__item-header span {
+                font-size: 11px;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            & h3 {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -275,7 +285,7 @@
     .services__item {
 
         & a h3 {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
