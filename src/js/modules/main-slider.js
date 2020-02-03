@@ -9,7 +9,10 @@
       onlyExternal:true
      });
   */
-  var firstSwiper = new Swiper('.js-gallery-first .swiper-container', {
+  var s1 = document.querySelector('.js-gallery-first .swiper-container');
+  var s2 = document.querySelector('.js-gallery-second .swiper-container');
+  if (s1 && s2) {
+  var firstSwiper = new Swiper(s1, {
     pagination: {
       el: '.swiper-pagination-first',
       type: 'progressbar',
@@ -17,7 +20,7 @@
     centeredSlides: true,
     //onlyExternal:true
   });
-  var secondSwiper = new Swiper('.js-gallery-second .swiper-container', {
+  var secondSwiper = new Swiper(s2, {
     pagination: {
       el: '.swiper-pagination-second',
       type: 'progressbar',
@@ -52,6 +55,7 @@
   var str2;
   str2 = num2 < 10 ? '0' + num2 : num2;
   spanAllSecond.textContent = str2;
+}
 })();
 /*
 const $slider = $("#slider");
@@ -64,13 +68,11 @@ $slider
 		infinite: false,
 	})
 function mouseWheel($slider) {
-
 	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
 }
 function mouseWheelHandler(event) {
 	event.preventDefault();
   console.log('wheel');
-
 	const $slider = event.data.$slider
 	const delta = event.originalEvent.deltaY
 	if(delta <= 0) {
