@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     color: $text-color;
+    overflow: hidden;
 }
 
 .about__decor {

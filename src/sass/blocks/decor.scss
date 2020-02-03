@@ -24,9 +24,31 @@
     }
 }
 
-.wheel {
+.wheel-skin {
+    width: 144px;
+    height: 144px;
     position: absolute;
-    bottom: -76px;
-    right: 50px;
+    bottom: -72px;
+    right: 120px;
+    // mix-blend-mode: screen;
+    animation: 20s linear 0s normal none infinite running rot;
+}
+
+.wheel-about {
+    width: 144px;
+    height: 144px;
+    position: absolute;
+    top: -72px;
+    right: 120px;
+    animation: 20s linear 0s normal none infinite running rot;
     // mix-blend-mode: screen;
 }
+
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

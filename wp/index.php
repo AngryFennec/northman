@@ -5,7 +5,7 @@
         <div class="skin__text-block">
           <h2 class="skin__title"><?php the_field('main_title');?></h2>
           <p class="skin__info"><?php the_field('main_info');?></p>
-            <img class="wheel" src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>wheel.png" alt="text">
+
         </div>
         <ul class="skin__social-list social-list">
         <li><a href="//www.facebook.com/virtualnorthman/">FB</a></li>
@@ -13,9 +13,11 @@
         <li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg">YT</a></li>
         <li><a href="//www.linkedin.com/company/digital-northman-ab/">LN</a></li>
         </ul>
-      </div>
+</div>  
+        <img class="wheel-skin" src="<?php echo  get_template_directory_uri() . '/assets/img/round-white.png';?>" alt="wheel">
     </section>
     <section class="about">
+      <img class="wheel-about" src="<?php echo  get_template_directory_uri() . '/assets/img/round-blue.png';?>" alt="wheel">
       <span class="about__decor decor"><?php the_field('description__decor');?></span>
       <div class="wrapper">
         <h2 class="about__title">
@@ -116,22 +118,22 @@
       <div class="wrapper">
         <h2 class="friends__title"><?php the_field('friends_title');?></h2>
         <ul class="friends__list">
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Colliers logo (1).png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Helsinki logo (1).png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>bergendal 2.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Cityvarasto-logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Veho logo 1.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Bagel street LOGO.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Varma logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Hankkija logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Thon property logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>University Logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>realia logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>tampere.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>24 storage logo.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>kirkko 1.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>SAMK-logo_imagelarge.png" alt=""></li>
-          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Metsä.png" alt=""></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Colliers logo (1).png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Helsinki logo (1).png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>bergendal 2.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Cityvarasto-logo.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Veho logo 1.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Bagel Street Cafe.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Varma logo.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Hankkija logo.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Thon property logo.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Helsingin Yliopisto.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>REALIA Group.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>tampere.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>24 storage logo.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Suomen Ev..png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>samk.png" alt="logo"></li>
+          <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Metsahallitus.png" alt="logo"></li>
         </ul>
       </div>
     </section>
