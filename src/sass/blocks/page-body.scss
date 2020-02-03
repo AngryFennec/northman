@@ -94,6 +94,11 @@
   & .services__item {
 
     margin-bottom: 50px;
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
     & a:hover {
       -webkit-text-fill-color: white;
       & span {
@@ -121,9 +126,19 @@
   & .services__list {
      margin-top: 0;
      margin-bottom: 0;
+     justify-content: flex-start;
   } 
 }
 
+@media (max-width: 1440px) {
+  .page-body--portfolio {
+    & .services__item {
+
+      margin-bottom: 3.47vw;
+      margin-right: 2.36vw;
+  }
+  }
+}
 @media (max-width: 768px) {
   .page-body--portfolio {
     & .header__portfolio-link {
@@ -136,6 +151,20 @@
   }
   
 }
+@media (max-width: 640px) {
+  .page-body--portfolio {
+
+    & .services__list {
+      justify-content: space-between;
+    }
+    & .services__item {
+
+      margin-bottom: 50px;
+      margin-right: 0;
+  }
+  }
+}
+
 
 @media (max-width: 500px) {
   .page-body .decor {
