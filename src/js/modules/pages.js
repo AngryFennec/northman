@@ -3,7 +3,7 @@
 
 (function () {
   console.log('Here is your code');
-
+if ($('.process')[0]) {
   $('.process').css('opacity', 0);
   $('.process').css('padding-top', 2000);
   $('.process').css('background', 'transparent');
@@ -36,5 +36,7 @@
 
     }
   })
+}
+ 
 
 })();
