@@ -1,11 +1,10 @@
 .gallery {
   background-color: #0c1d39;
-  padding-top: 140px;
+  //padding-top: 140px;
   width: 100%;
-//  overflow:hidden;
+ overflow:hidden;
 }
 .gallery__main-slider>.swiper-container {
-  padding-top: 45px;
     width: 100%;
     height: 100vh;
     margin-left: auto;
@@ -20,7 +19,6 @@
 }
 
 .swiper-slide {
-  padding-bottom: 240px;
   background-color: #0c1d39;
 
 
@@ -64,9 +62,7 @@ margin-left: 27%;
 
 .gallery__item {
   display: flex;
-
-margin-bottom: 130px;
-padding-top: 30px;
+//padding-top: 30px;
     position: relative;
     & h3 {
       margin-top: 70px;
@@ -112,7 +108,11 @@ padding-top: 30px;
     &.swiper-slide {
       margin-bottom: 0;
       padding-bottom: 0;
+      height: 100%;
 
+    }
+    & .swiper-container {
+      height: 100%;
     }
     & .swiper-pagination {
       top: 95%;
@@ -186,7 +186,7 @@ letter-spacing: 0.035em;
 
 color: #FAFAFA;
 position: absolute;
-z-index: 30;
+z-index: 50;
 top: 92%;
 
 }

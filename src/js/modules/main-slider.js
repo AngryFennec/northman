@@ -61,15 +61,62 @@ var mainSlider = document.querySelector('.gallery__main-slider-container');
 if(mainSlider) {
   var mainSwiper = new Swiper (mainSlider, {
 			// Optional parameters
-			direction: 'vertical',
-      mousewheel: true,
-			slidesPerView: 1,
-			//mousewheel: {
-		//		releaseOnEdges: true,
-		//	},
+      direction: 'vertical',
+      slidesPerView: 1,
+      mousewheelControl: true,
+      parallax: true,
+      speed: 600,
+      centeredSlides: true,
 
     });
-}
+
+var counter = 0;
+window.addEventListener("wheel", event =>  {
+  if(event.deltaY < 0) {
+    counter = 0;
+  }
+  console.log(mainSwiper.activeIndex);
+  console.log(mainSwiper.slides.length);
+  if (mainSwiper.activeIndex === mainSwiper.slides.length-1 && event.deltaY > 0) {
+    if (counter > 0) {
+      document.querySelector('.gallery__more').scrollIntoView();
+    } else {
+      counter++;
+    }
+  }
+});
+mainSwiper.on('slideChangeTransitionEnd', function () {
+        var acs = document.querySelectorAll('.swiper-slide-active')[0];
+        var hasVerticalScrollbar = acs.scrollHeight > acs.clientHeight;
+
+        if (hasVerticalScrollbar) {
+            var scrollHeight = acs.scrollHeight;
+            var slideSize = acs.swiperSlideSize;
+            var scrollDifferenceTop = scrollHeight - slideSize;
+
+            acs.addEventListener('wheel', findScrollDirectionOtherBrowsers);
+
+            function findScrollDirectionOtherBrowsers(event) {
+
+                var scrollDifference = scrollHeight - slideSize - acs.scrollTop;
+
+								// Scroll wheel browser compatibility
+								var delta = event.wheelDelta || -1 * event.deltaY;
+
+                // Enable scrolling if at edges
+                var spos = delta < 0 ? 0 : scrollDifferenceTop;
+
+                if (!(scrollDifference == spos))
+                	swiper.mousewheel.disable();
+                else
+                	swiper.mousewheel.enable();
+                if (mainSwiper.activeIndex === mainSwiper.slides.length) {
+                  console.log(event);
+                }
+            }
+        }
+    });
+  }
 })();
 /*
 const $slider = $("#slider");
