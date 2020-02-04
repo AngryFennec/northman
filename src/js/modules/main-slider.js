@@ -9,6 +9,40 @@
       onlyExternal:true
      });
   */
+
+
+var mainSlider = document.querySelector('.gallery__main-slider-container');
+if(mainSlider) {
+  var mainSwiper = new Swiper (mainSlider, {
+			// Optional parameters
+      direction: 'vertical',
+      slidesPerView: 1,
+      mousewheel: true,
+      parallax: true,
+      speed: 600,
+      centeredSlides: true,
+
+    });
+
+var counter = 0;
+window.addEventListener("wheel", event =>  {
+  if(event.deltaY < 0) {
+    counter = 0;
+  }
+  if (mainSwiper.activeIndex === mainSwiper.slides.length-1 && event.deltaY > 0) {
+    if (counter > 0) {
+      window.scrollBy({
+  top: 300,
+  behavior: 'smooth'
+});
+    } else {
+      counter++;
+    }
+  }
+});
+
+  }
+
   var s1 = document.querySelector('.js-gallery-first .swiper-container');
   var s2 = document.querySelector('.js-gallery-second .swiper-container');
   if (s1 && s2) {
@@ -56,66 +90,4 @@
   str2 = num2 < 10 ? '0' + num2 : num2;
   spanAllSecond.textContent = str2;
 }
-
-var mainSlider = document.querySelector('.gallery__main-slider-container');
-if(mainSlider) {
-  var mainSwiper = new Swiper (mainSlider, {
-			// Optional parameters
-      direction: 'vertical',
-      slidesPerView: 1,
-      mousewheelControl: true,
-      parallax: true,
-      speed: 600,
-      centeredSlides: true,
-
-    });
-
-var counter = 0;
-window.addEventListener("wheel", event =>  {
-  if(event.deltaY < 0) {
-    counter = 0;
-  }
-  if (mainSwiper.activeIndex === mainSwiper.slides.length-1 && event.deltaY > 0) {
-    if (counter > 0) {
-      window.scrollBy({
-  top: 300,
-  behavior: 'smooth'
-});
-    } else {
-      counter++;
-    }
-  }
-});
-mainSwiper.on('slideChangeTransitionEnd', function () {
-        var acs = document.querySelectorAll('.swiper-slide-active')[0];
-        var hasVerticalScrollbar = acs.scrollHeight > acs.clientHeight;
-
-        if (hasVerticalScrollbar) {
-            var scrollHeight = acs.scrollHeight;
-            var slideSize = acs.swiperSlideSize;
-            var scrollDifferenceTop = scrollHeight - slideSize;
-
-            acs.addEventListener('wheel', findScrollDirectionOtherBrowsers);
-
-            function findScrollDirectionOtherBrowsers(event) {
-
-                var scrollDifference = scrollHeight - slideSize - acs.scrollTop;
-
-								// Scroll wheel browser compatibility
-								var delta = event.wheelDelta || -1 * event.deltaY;
-
-                // Enable scrolling if at edges
-                var spos = delta < 0 ? 0 : scrollDifferenceTop;
-
-                if (!(scrollDifference == spos))
-                	swiper.mousewheel.disable();
-                else
-                	swiper.mousewheel.enable();
-                if (mainSwiper.activeIndex === mainSwiper.slides.length) {
-                  console.log(event);
-                }
-            }
-        }
-    });
-  }
 })();
