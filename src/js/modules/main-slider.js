@@ -56,6 +56,20 @@
   str2 = num2 < 10 ? '0' + num2 : num2;
   spanAllSecond.textContent = str2;
 }
+
+var mainSlider = document.querySelector('.gallery__main-slider-container');
+if(mainSlider) {
+  var mainSwiper = new Swiper (mainSlider, {
+			// Optional parameters
+			direction: 'vertical',
+      mousewheel: true,
+			slidesPerView: 1,
+			//mousewheel: {
+		//		releaseOnEdges: true,
+		//	},
+
+    });
+}
 })();
 /*
 const $slider = $("#slider");
