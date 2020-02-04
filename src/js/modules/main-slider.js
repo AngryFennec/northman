@@ -46,7 +46,7 @@
 
   var spanAllFirst = document.querySelector('.js-gallery-first .js-all');
   var spanAllSecond = document.querySelector('.js-gallery-second .js-all');
-  console.log();
+
   var num1 = firstSwiper.slides.length;
   var str1;
   str1 = num1 < 10 ? '0' + num1 : num1;
@@ -75,11 +75,12 @@ window.addEventListener("wheel", event =>  {
   if(event.deltaY < 0) {
     counter = 0;
   }
-  console.log(mainSwiper.activeIndex);
-  console.log(mainSwiper.slides.length);
   if (mainSwiper.activeIndex === mainSwiper.slides.length-1 && event.deltaY > 0) {
     if (counter > 0) {
-      document.querySelector('.gallery__more').scrollIntoView();
+      window.scrollBy({
+  top: 300,
+  behavior: 'smooth'
+});
     } else {
       counter++;
     }
@@ -118,29 +119,3 @@ mainSwiper.on('slideChangeTransitionEnd', function () {
     });
   }
 })();
-/*
-const $slider = $("#slider");
-$slider
-	.on('init', () => {
-		mouseWheel($slider)
-	})
-	.slick({
-		vertical: true,
-		infinite: false,
-	})
-function mouseWheel($slider) {
-	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
-}
-function mouseWheelHandler(event) {
-	event.preventDefault();
-  console.log('wheel');
-	const $slider = event.data.$slider
-	const delta = event.originalEvent.deltaY
-	if(delta <= 0) {
-		$slider.slick('slickPrev')
-	}
-	else {
-		$slider.slick('slickNext')
-	}
-}
-*/
