@@ -11,7 +11,7 @@
   <?php wp_head() ?>
 </head>
 
-<body class="page-body <?php if ($pagename === 'our-portfolio' || $pagename === 'our-portfolio-2'||$pagename === 'our-portfolio-3' ||$pagename === 'our-portfolio-4') echo 'page-body--portfolio';?>">
+<body class="page-body <?php if ($pagename === 'our-portfolio' || $pagename === 'our-portfolio-2'||$pagename === 'our-portfolio-3' ||$pagename === 'our-portfolio-4' || $pagename === 'calendar' || $pagename === 'calendar-2' || $pagename === 'calendar-3' || $pagename === 'calendar-4') echo 'page-body--portfolio';?>">
   <span class="decor decor--big">Nortman VR</span>
   <h1>Northman</h1>
   <header class="header">

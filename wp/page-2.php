@@ -49,7 +49,7 @@
           </ul>
         </div>
         <div class="process__image-wrapper process__image-wrapper--big">
-              <a href="<?=get_field('process_video_area')['link-1'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-1'];?>" alt="video preview"></a>
+              <a href="<?=get_field('process_video_area')['link-1'];?>" <?php echo (get_field('page_service') == '360') ? 'data-fancybox = "stage"' : "target='_blanc'";?>><img src="<?=get_field('process_video_area')['preview-1'];?>" alt="video preview"></a>
         </div>
         
         <a class="process__portfolio-link" href="/wp/portfolio/"><?php the_field('process_portfolio-link');?></a>
