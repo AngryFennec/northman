@@ -99,6 +99,26 @@
   str3 = num3 < 10 ? '0' + num3 : num3;
   spanAllThird.textContent = str3;
 }
+
+// var sliderTop = $('.gallery').offset().top - 400;
+// var flag = 0;
+// $(window).on('scroll', function () {
+//   if ($(window).scrollTop() < sliderTop) {
+//     flag = 0;
+//   }
+//   if ($(window).scrollTop()  >=  sliderTop && flag == 0) {
+//     $('html, body').animate( { scrollTop: $('.gallery').offset().top }, 500 );
+//     $('.gallery').css('position', 'fixed');
+//     $('.gallery').css('top', '0');
+//     $('.gallery').css('z-index', '20');
+//     flag=1;
+//   }
+//   var staticflag = 0;
+//   if ($('.swiper-slide:nth-child(5)').hasClass('swiper-slide-active') && staticFlag == 0) {
+//     $('.gallery').css('position', 'static');
+//     staticflag = 1;
+//   }
+// })
 })();
 /*
 const $slider = $("#slider");

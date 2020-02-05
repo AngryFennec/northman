@@ -10,8 +10,13 @@
 }
 
 .color {
-  transition: background 0.3s linear;
+  transition: background 0.1s ease;
   background: $text-color;
+}
+
+.transparent{
+  transition: background 0.1s ease;
+  background: transparent !important;
 }
 .page-body .decor {
   bottom: 50px;

@@ -29,90 +29,131 @@
       </div>
     </section>
     <section class="gallery">
-      <h2 class="visually-hidden">Слайдер галерея</h2>
+      <h2 class="visually-hidden">Slider</h2>
       <div class="wrapper wrapper--nopadding">
-        <div class="gallery__main-slider swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="gallery__item">
+        <div class="gallery__main-slider">
+          <div class="swiper-container gallery__main-slider-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery__item">
+                <h3><?=get_field('ivt_group')['title'];?></h3>
                 <div class="gallery__item-text">
-                  <h3>Interactive Virtual Tours</h3>
-                  <p>The user can remotely view an environment in full 360-degrees around the room standing in one point, or they can switch to a different room. </p>
-                  <a href="#">Learn more</a>
+                  <p><?=get_field('ivt_group')['content'];?></p>
+                  <a href="<?=get_field('ivt_group')['link'];?>"><?=get_field('ivt_group')['link_text'];?></a>
                 </div>
-                <div class="gallery__slider">
+                <div class="gallery__slider gallery__img--slider js-gallery-first">
                   <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img></div>
-                      <div class="swiper-slide"><img></div>
-                      <div class="swiper-slide"><img></div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('ivt_group')['image'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('ivt_group')['image-2'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('ivt_group')['image-3'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <span class="js-current">01</span>
+                    <span class="js-all">03</span>
+                    <div class="swiper-pagination swiper-pagination-first">
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery__item">
+
+              <div class="swiper-slide gallery__item">
+                <h3><?=get_field('vr_group')['title'];?></h3>
                 <div class="gallery__item-text">
-                  <h3>Virtual Reality</h3>
-                  <p>Using state-of-the-art gear, we create imagined scenes that look so real that viewers find themselves completely immersed in them.</p>
-                  <a href="#">Learn more</a>
+                  <p><?=get_field('vr_group')['content'];?></p>
+                  <a href="<?=get_field('vr_group')['link'];?>"><?=get_field('vp_group')['link_text'];?></a>
                 </div>
-                <div class="gallery__slider">
+                <div class="gallery__slide gallery__img--slider  js-gallery-second">
                   <div class="swiper-container">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img></div>
-                      <div class="swiper-slide"><img></div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('vr_group')['image'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('vr_group')['image-2'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <span class="js-current">01</span>
+
+                    <span class="js-all">02</span>
+                    <div class="swiper-pagination swiper-pagination-second"></div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery__item">
+
+              <div class="swiper-slide gallery__item">
+                <h3><?=get_field('_360-group')['title'];?></h3>
                 <div class="gallery__item-text">
-                  <h3>360 Videos</h3>
-                  <p>Grab clients attention from the first frame with 360-degree videos. Users can engage and interact with the video by swiping or moving their tablet or phone around, putting them at the center of the action.</p>
-                  <a href="#">Learn more</a>
+                  <p><?=get_field('_360-group')['content'];?></p>
+                  <a href="<?=get_field('_360-group')['link'];?>"><?=get_field('_360-group')['link_text'];?></a>
                 </div>
                 <div class="gallery__img">
-                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-3.png" width=720 height=480 alt="picture">
+                  <img src="<?=get_field('_360-group')['image'];?>" width=854 height=570 alt="picture">
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery__item">
+
+              <div class="swiper-slide gallery__item">
+                <h3><?=get_field('drone-group')['title'];?></h3>
                 <div class="gallery__item-text">
-                  <h3>Drone Services</h3>
-                  <p>Breathtaking aerial videos take the mundane and make it extraordinary. Our team of expert drone videographers are here to meet your specific needs, as no two projects are exactly alike. We’ll get the video you need, edited and
-                    designed to your specifications.</p>
-                  <a href="#">Learn more</a>
+
+                  <p><?=get_field('drone-group')['content'];?></p>
+                  <a href="<?=get_field('drone-group')['link'];?>"><?=get_field('drone-group')['link_text'];?></a>
                 </div>
-                <div class="gallery__img">
-                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-4.png" width=720 height=480 alt="picture">
+                <div class="gallery__slide gallery__img--slider  js-gallery-third">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('drone-group')['image'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="gallery__slider-container">
+                          <img src="<?=get_field('drone-group')['image-2'];?>" width=854 height=570 alt="picture">
+                        </div>
+                      </div>
+                    </div>
+                    <span class="js-current">01</span>
+
+                    <span class="js-all">02</span>
+                    <div class="swiper-pagination swiper-pagination-third"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="gallery__item">
+
+              <div class="swiper-slide gallery__item">
+                <h3><?=get_field('render-group')['title'];?></h3>
                 <div class="gallery__item-text">
-                  <h3>3D Rendering</h3>
-                  <p>Utilizing the latest equipment, we add value to your business by offering 3D photorealistic renderings to give potential customers and clients an impeccable image of what the space will truly look like.</p>
-                  <a href="#">Learn more</a>
+
+                  <p><?=get_field('render-group')['content'];?></p>
+                  <a href="<?=get_field('render-group')['link'];?>"><?=get_field('render-group')['link_text'];?></a>
                 </div>
                 <div class="gallery__img">
-                  <img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>gallery-5.png" width=720 height=480 alt="picture">
+                  <img src="<?=get_field('render-group')['image'];?>" width=854 height=570 alt="picture">
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="gallery__more">
-          <a  href="#">See all projects</a>
+          <a href="#"><?php pll_e('See All Projects'); ?></a>
+        </div>
       </div>
-      </div>
+
     </section>
     <section class="friends">
       <div class="wrapper">

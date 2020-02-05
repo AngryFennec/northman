@@ -3,6 +3,7 @@
   //padding-top: 140px;
   width: 100%;
  overflow:hidden;
+ padding-top: 200px;
 }
 .gallery__main-slider>.swiper-container {
     width: 100%;
@@ -12,10 +13,10 @@
     box-sizing: border-box;
   background-color: #0c1d39;
 
-& .swiper-wrapper {
-  background-color: #0c1d39;
+  & .swiper-wrapper {
+    background-color: #0c1d39;
 
-}
+  }
 }
 
 .swiper-slide {
