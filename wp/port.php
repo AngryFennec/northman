@@ -13,7 +13,7 @@
           <div class="services__menu__wrapper">
             <div class="services__menu-select">Menu</div>
             <nav class="services__menu services__menu--up ">
-              <a href="#"><?=get_field('menu')['all'];?></a>
+              <a href="?"><?=get_field('menu')['all'];?></a>
               <a href="?cat=VR"><?=get_field('menu')['virtual_reality'];?></a>
               <a href="?cat=IVT"><?=get_field('menu')['ivt'];?></a>
               <a href="?cat=360"><?=get_field('menu')['_360_videos_'];?></a>
@@ -37,7 +37,7 @@
             if (isset($_REQUEST['cat'])) {
                   if (get_field('service') == $_REQUEST['cat']) { ?>
                       <li class="services__item">
-                        <a href="<?php the_field('video_link');?>" data-fancybox = "portfolio">
+                        <a href="<?php the_field('video_link');?>" target="_blanc">
                           <div class="services__item-arrow">
                             <img src="<?php echo  get_template_directory_uri() . "/assets/img/arrow-white.svg";?>" alt="">
                           </div>
@@ -57,7 +57,7 @@
                    }
             } else {?>
               <li class="services__item">
-              <a href="<?php the_field('video_link');?>" data-fancybox = "portfolio">
+              <a href="<?php the_field('video_link');?>" target="_blanc">
                 <div class="services__item-arrow">
                   <img src="<?php echo  get_template_directory_uri() . "/assets/img/arrow-white.svg";?>" alt="">
                 </div>

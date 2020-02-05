@@ -80,6 +80,7 @@ add_action('init', function() {
 	pll_register_string('mytheme-feadback', 'IVT');
 	pll_register_string('mytheme-feadback', 'DS');
 	pll_register_string('mytheme-feadback', '360');
+	pll_register_string('mytheme-feadback', 'See All Projects');
 });
 
 ?>

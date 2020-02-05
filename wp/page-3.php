@@ -51,16 +51,16 @@
         <div class="process__image-wrapper">
           <ul class="process__video-list">
             <li class="process__item">
-              <a href="<?=get_field('process_video_area')['link-1'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-1'];?>" alt="video preview"></a>
-              <a href="<?=get_field('process_video_area')['link-2'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-2'];?>" alt="video preview"></a>
+              <a href="<?=get_field('process_video_area')['link-1'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-1'];?>" alt="video preview"></a>
+              <a href="<?=get_field('process_video_area')['link-2'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-2'];?>" alt="video preview"></a>
             </li>
             <li class="process__item">
-              <a href="<?=get_field('process_video_area')['link-3'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-3'];?>" alt="video preview"></a>
-              <a href="<?=get_field('process_video_area')['link-4'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-4'];?>" alt="video preview"></a>
+              <a href="<?=get_field('process_video_area')['link-3'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-3'];?>" alt="video preview"></a>
+              <a href="<?=get_field('process_video_area')['link-4'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-4'];?>" alt="video preview"></a>
             </li>
             <li class="process__item">
-                <a href="<?=get_field('process_video_area')['link-5'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-5'];?>" alt="video preview"></a>
-                <a href="<?=get_field('process_video_area')['link-6'];?>" data-fancybox = 'stage'><img src="<?=get_field('process_video_area')['preview-6'];?>" alt="video preview"></a>
+                <a href="<?=get_field('process_video_area')['link-5'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-5'];?>" alt="video preview"></a>
+                <a href="<?=get_field('process_video_area')['link-6'];?>" target="_blanc"><img src="<?=get_field('process_video_area')['preview-6'];?>" alt="video preview"></a>
             </li>
           </ul>
         </div>
