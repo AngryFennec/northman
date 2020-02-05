@@ -9,3 +9,4 @@
 //= modules/header.js
 //= modules/main-slider.js
 //= modules/scroll.js
+//= modules/cookie.js
