@@ -1,0 +1,43 @@
+.cookie {
+    width: 428px;
+    height: 43px;
+    position: fixed;
+    right: -140px;
+    top: 40vh;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: rotate(90deg);
+    z-index: 100;
+    -webkit-transform-origin: 50%  51%;
+
+    & p {
+        margin: 0;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12.7px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #000000;
+
+        text-align: center
+    }
+
+    & a {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12.7px;
+        line-height: 150%;
+        letter-spacing: 0.03em;
+        color: #000000;
+        border-bottom: 1px solid black;
+    }
+
+    & .cookie__agree {
+        margin-left: 40px;
+        font-weight: bold;
+    }
+}
