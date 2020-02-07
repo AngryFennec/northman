@@ -11,6 +11,8 @@ $desktop-padding: 20px;
 $tablet-padding: 60px;
 $mobile-padding: 25px;
 
+$laptop: "max-width: #{$laptop-width}";
+
 
 $reserve-font-family: "Arial", sans-serif;
 $font: "Open Sans", $reserve-font-family;
