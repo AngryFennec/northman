@@ -3,7 +3,11 @@
   //padding-top: 140px;
   width: 100%;
  overflow:hidden;
- padding-top: 200px;
+//  padding-top: 200px;
+}
+
+.gallery .wrapper {
+  max-width: 100%;
 }
 .gallery__main-slider>.swiper-container {
     width: 100%;
@@ -18,7 +22,10 @@
 
   }
 }
-
+.gallery__item {
+  
+  // padding-top: 200px;
+}
 .swiper-slide {
   background-color: #0c1d39;
 
@@ -208,6 +215,9 @@ top: 92%;
 left: 190px;
 }
 
+// .swiper-slide-active {
+//   opacity: 1 !important;
+// }
 @media (max-width:1439px) {
   .gallery__item {
     display: flex;
