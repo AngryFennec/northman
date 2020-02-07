@@ -52,7 +52,7 @@
               <a href="<?=get_field('process_video_area')['link-1'];?>" <?php echo (get_field('page_service') == '360') ? 'data-fancybox = "stage"' : "target='_blanc'";?>><img src="<?=get_field('process_video_area')['preview-1'];?>" alt="video preview"></a>
         </div>
         
-        <a class="process__portfolio-link" href="/wp/portfolio/"><?php the_field('process_portfolio-link');?></a>
+        <a class="process__portfolio-link" href="<?php echo get_permalink(pll_get_post(386));?>"><?php the_field('process_portfolio-link');?></a>
       </div>
     </section>
     <section class="services">

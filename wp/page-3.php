@@ -4,7 +4,7 @@
     */
 
     get_header();
-    
+   
     $map = [
         'VR'=> [130, 131, 132, 133],
         '3D'=> [146, 147, 148, 149],
@@ -65,7 +65,7 @@
           </ul>
         </div>
         
-        <a class="process__portfolio-link" href="/wp/portfolio/"><?php the_field('process_portfolio-link');?></a>
+        <a class="process__portfolio-link" href="<?php echo get_permalink(pll_get_post(386));?>"><?php the_field('process_portfolio-link');?></a>
       </div>
     </section>
     <section class="services">

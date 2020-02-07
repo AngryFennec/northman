@@ -25,7 +25,7 @@
           <span class="about__subtitle"><?php the_field('about_subtitle');?></span>
         </h2>
         <div class="about__content"><?php the_field('description_content');?></div>
-        <a href="/our-portfolio/" class="about__portfolio-link"><?php the_field('about_link-text');?></a>
+        <a href="<?php echo get_permalink(pll_get_post(386));?>" class="about__portfolio-link"><?php the_field('about_link-text');?></a>
       </div>
     </section>
     <section class="gallery">
