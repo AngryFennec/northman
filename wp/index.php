@@ -28,133 +28,129 @@
         <a href="<?php echo get_permalink(pll_get_post(386));?>" class="about__portfolio-link"><?php the_field('about_link-text');?></a>
       </div>
     </section>
-    <section class="gallery">
-      <h2 class="visually-hidden">Slider</h2>
-      <div class="wrapper wrapper--nopadding">
-        <div class="gallery__main-slider">
-          <div class="swiper-container gallery__main-slider-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide gallery__item">
-                <h3><?=get_field('ivt_group')['title'];?></h3>
-                <div class="gallery__item-text">
-                  <p><?=get_field('ivt_group')['content'];?></p>
-                  <a href="<?=get_field('ivt_group')['link'];?>"><?=get_field('ivt_group')['link_text'];?></a>
-                </div>
-                <div class="gallery__slider gallery__img--slider js-gallery-first">
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('ivt_group')['image'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('ivt_group')['image-2'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('ivt_group')['image-3'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                    </div>
-                    <span class="js-current">01</span>
-                    <span class="js-all">03</span>
-                    <div class="swiper-pagination swiper-pagination-first">
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <section class="slider gallery">
+		<div class="slide">
+			<div class="slide-inner" style="z-index:25">
+				<div class="gallery__item-text">
+					<h3><?=get_field('ivt_group')['title'];?></h3>
+					<p><?=get_field('ivt_group')['content'];?></p>
+          <a href="<?=get_field('ivt_group')['link'];?>"><?=get_field('ivt_group')['link_text'];?></a>
+				</div>
+				<div class="gallery__slider gallery__img--slider js-gallery-first">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('ivt_group')['image'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('ivt_group')['image-2'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('ivt_group')['image-3'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+						</div>
+							<span class="js-current" style="position: absolute; bottom: -40px">01</span>
+							<span class="js-all">03</span>
+							<div class="swiper-pagination swiper-pagination-first">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide-inner" style="z-index:20">
+				<div class="gallery__item-text">
+					<h3><?=get_field('vr_group')['title'];?></h3>
+					<p><?=get_field('vr_group')['content'];?></p>
+          <a href="<?=get_field('vr_group')['link'];?>"><?=get_field('vp_group')['link_text'];?></a>
+				</div>
+				<div class="gallery__slide gallery__img--slider  js-gallery-second">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('vr_group')['image'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('vr_group')['image-2'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+						</div>
+						<span class="js-current">01</span>
+						<span class="js-all">02</span>
+						<div class="swiper-pagination swiper-pagination-second"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide-inner" style="z-index:15">
 
-              <div class="swiper-slide gallery__item">
-                <h3><?=get_field('vr_group')['title'];?></h3>
-                <div class="gallery__item-text">
-                  <p><?=get_field('vr_group')['content'];?></p>
-                  <a href="<?=get_field('vr_group')['link'];?>"><?=get_field('vp_group')['link_text'];?></a>
-                </div>
-                <div class="gallery__slide gallery__img--slider  js-gallery-second">
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('vr_group')['image'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('vr_group')['image-2'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                    </div>
-                    <span class="js-current">01</span>
+				<div class="gallery__item-text">
+					<h3><?=get_field('_360-group')['title'];?></h3>
+					<p><?=get_field('_360-group')['content'];?></p>
+          <a href="<?=get_field('_360-group')['link'];?>"><?=get_field('_360-group')['link_text'];?></a>
+				</div>
+				<div class="gallery__img">
+					<img src="<?=get_field('_360-group')['image'];?>" width=854 height=570 alt="picture">
+				</div>
 
-                    <span class="js-all">02</span>
-                    <div class="swiper-pagination swiper-pagination-second"></div>
-                  </div>
-                </div>
-              </div>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide-inner " style="z-index:10">
 
-              <div class="swiper-slide gallery__item">
-                <h3><?=get_field('_360-group')['title'];?></h3>
-                <div class="gallery__item-text">
-                  <p><?=get_field('_360-group')['content'];?></p>
-                  <a href="<?=get_field('_360-group')['link'];?>"><?=get_field('_360-group')['link_text'];?></a>
-                </div>
-                <div class="gallery__img">
-                  <img src="<?=get_field('_360-group')['image'];?>" width=854 height=570 alt="picture">
-                </div>
-              </div>
+				<div class="gallery__item-text">
+					<h3><?=get_field('drone-group')['title'];?></h3>
+          <p><?=get_field('drone-group')['content'];?></p>
+          <a href="<?=get_field('drone-group')['link'];?>"><?=get_field('drone-group')['link_text'];?></a>
+				</div>
+				<div class="gallery__slide gallery__img--slider  js-gallery-third">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('drone-group')['image'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="gallery__slider-container">
+									<img src="<?=get_field('drone-group')['image-2'];?>" width=854 height=570 alt="picture">
+								</div>
+							</div>
+						</div>
+						<span class="js-current">01</span>
 
-              <div class="swiper-slide gallery__item">
-                <h3><?=get_field('drone-group')['title'];?></h3>
-                <div class="gallery__item-text">
+						<span class="js-all">02</span>
+						<div class="swiper-pagination swiper-pagination-third"></div>
+					</div>
+				</div>
 
-                  <p><?=get_field('drone-group')['content'];?></p>
-                  <a href="<?=get_field('drone-group')['link'];?>"><?=get_field('drone-group')['link_text'];?></a>
-                </div>
-                <div class="gallery__slide gallery__img--slider  js-gallery-third">
-                  <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('drone-group')['image'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="gallery__slider-container">
-                          <img src="<?=get_field('drone-group')['image-2'];?>" width=854 height=570 alt="picture">
-                        </div>
-                      </div>
-                    </div>
-                    <span class="js-current">01</span>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="slide-inner" style="z-index:5">
+				<div class="gallery__item-text">
+					<h3><?=get_field('render-group')['title'];?></h3>
+          <p><?=get_field('render-group')['content'];?></p>
+          <a href="<?=get_field('render-group')['link'];?>"><?=get_field('render-group')['link_text'];?></a>
+				</div>
+				<div class="gallery__img">
+					<img src="<?=get_field('render-group')['image'];?>" width=854 height=570 alt="picture">
+				</div>
 
-                    <span class="js-all">02</span>
-                    <div class="swiper-pagination swiper-pagination-third"></div>
-                  </div>
-                </div>
-              </div>
+			</div>
+		</div>
 
-              <div class="swiper-slide gallery__item">
-                <h3><?=get_field('render-group')['title'];?></h3>
-                <div class="gallery__item-text">
-
-                  <p><?=get_field('render-group')['content'];?></p>
-                  <a href="<?=get_field('render-group')['link'];?>"><?=get_field('render-group')['link_text'];?></a>
-                </div>
-                <div class="gallery__img">
-                  <img src="<?=get_field('render-group')['image'];?>" width=854 height=570 alt="picture">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="gallery__more">
-          <a href="#"><?php pll_e('See All Projects'); ?></a>
-        </div>
-      </div>
-
-    </section>
+	</section>
     <section class="friends">
       <div class="wrapper">
         <h2 class="friends__title"><?php the_field('friends_title');?></h2>
