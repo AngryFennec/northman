@@ -8,3 +8,4 @@
 //= vendor/jquery.fancybox.js
 //= vendor/jquery.scrollify.js
 //= vendor/swiper.js
+//= vendor/fullpage.min.js
