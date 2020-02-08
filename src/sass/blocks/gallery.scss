@@ -371,7 +371,11 @@ left: 190px;
 	.slide {
 		height: auto;
 		padding: 50px 0;
-	}
+  }
+  
+  .slide:last-child{
+    display: none;
+  }
 
 	.slide-inner {
 		flex-direction: column;

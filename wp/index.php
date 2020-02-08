@@ -68,7 +68,7 @@
 				<div class="gallery__item-text">
 					<h3><?=get_field('vr_group')['title'];?></h3>
 					<p><?=get_field('vr_group')['content'];?></p>
-          <a href="<?=get_field('vr_group')['link'];?>"><?=get_field('vp_group')['link_text'];?></a>
+          <a href="<?=get_field('vr_group')['link'];?>"><?=get_field('vr_group')['link_text'];?></a>
 				</div>
 				<div class="gallery__slide gallery__img--slider  js-gallery-second">
 					<div class="swiper-container">
@@ -173,7 +173,44 @@
           <li class="friends__item"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>Metsahallitus.png" alt="logo"></li>
         </ul>
       </div>
-    </section>
+	</section>
+	<section class="blog">
+    <div class="wrapper">
+      <h2 class="blog__title">Digital Blog</h2>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <div class="blog__image-block">
+            <img src="<?=get_field('first_preview')['image'];?>" alt="image">
+          </div>
+          <a href="<?=get_field('first_preview')['link'];?>"><?=get_field('first_preview')['title'];?></a>
+        </li>
+        <li class="blog__item">
+          <div class="blog__image-block">
+            <img src="<?=get_field('second_preview')['image'];?>" alt="image">
+          </div>
+          <a href="<?=get_field('second_preview')['link'];?>"><?=get_field('second_preview')['title'];?></a>
+        </li>
+        <li class="blog__item">
+          <div class="blog__image-block">
+            <img src="<?=get_field('third_preview')['image'];?>" alt="image">
+          </div>
+          <a href="<?=get_field('third_preview')['link'];?>"><?=get_field('third_preview')['title'];?></a>
+        </li>
+        <li class="blog__item">
+          <div class="blog__image-block">
+            <img src="<?=get_field('fourth_preview')['image'];?>" alt="image">
+          </div>
+          <a href="<?=get_field('fourth_preview')['link'];?>"><?=get_field('fourth_preview')['title'];?></a>
+        </li>
+        <li class="blog__item">
+          <div class="blog__image-block">
+            <img src="<?=get_field('fifth_preview')['image'];?>" alt="image">
+          </div>
+          <a href="<?=get_field('fifth_preview')['link'];?>"><?=get_field('fifth_preview')['title'];?></a>
+        </li>
+      </ul>
+    </div>
+  </section>
     <section class="feadback">
       <div class="wrapper">
         <h2 class="feadback__header"><?php pll_e('Let’s discuss your project'); ?></h2>

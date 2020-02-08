@@ -40,7 +40,7 @@
     border-bottom: 1px solid #0C1D39;
     width: 100%;
     max-width: 540px;
-    min-width: 100%;
+    min-width: 540px;
     height: 20px;
     margin-bottom: 54px;
     padding-bottom: 0;
@@ -208,6 +208,12 @@
         &:first-of-type {
             margin-right: 30px;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .feadback__field {
+        min-width: 460px;
     }
 }
 
