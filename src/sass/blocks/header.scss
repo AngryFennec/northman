@@ -12,7 +12,11 @@
     width: 130px;
 }
 
-.header__menu { 
+.header__logo-block {
+  margin-right: 4%;
+}
+
+.header__menu {
     box-sizing: border-box;
     width: 100%;
     max-width: 1240px;
@@ -41,6 +45,16 @@
 
 .header__burder {
     display: none;
+}
+
+.header__portfolio-link--blog {
+  width: 70px;
+}
+
+@media (max-width: 960px) {
+  .header__portfolio-link--blog {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
