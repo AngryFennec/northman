@@ -12,9 +12,6 @@
     width: 130px;
 }
 
-.header__logo-block {
-  margin-right: 4%;
-}
 
 .header__menu {
     box-sizing: border-box;
@@ -22,8 +19,19 @@
     max-width: 1240px;
     padding: 49px 20px;
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     margin: 0 auto;
+    & a {
+      text-decoration: none;
+      font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 150%;
+
+/* identical to box height, or 21px */
+
+color: #FFFFFF;
+    }
 }
 
 .header ul {
@@ -47,17 +55,20 @@
     display: none;
 }
 
-.header__portfolio-link--blog {
+.header__blog-link {
   width: 70px;
 }
 
 @media (max-width: 960px) {
-  .header__portfolio-link--blog {
+  .header__blog-link {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .header__menu-item {
+    display: none;
+  }
     .header__burder {
         display: block;
         background: transparent;
