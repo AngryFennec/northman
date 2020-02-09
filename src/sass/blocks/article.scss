@@ -1,0 +1,131 @@
+.content {
+    position: relative;
+    padding: 120px 0 120px 0;
+    display: flex;
+    flex-direction: column;
+    color: $white;
+    overflow: hidden;
+    background: $text-color;
+
+    &--light {
+        background: none;
+        color: $text-color;
+
+        & .content__back-link {
+            border-color: $text-color
+        }
+    }
+}
+
+.content__decor {
+    top: 35px;
+}
+
+.content__back-link {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 150%;
+    /* identical to box height, or 45px */
+    color: inherit;
+    letter-spacing: 0.035em;
+    border-bottom: 1px solid $white;
+}
+
+.content__content {
+    column-count: 2;
+    column-gap: 120px;
+    margin-bottom: 20px;
+    padding-left: 120px;
+
+    & p {
+        margin-top: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        letter-spacing: 0.025em;
+        margin-bottom: 23px;
+        display: inline-block;
+    }
+}
+
+.content__title {
+    margin-top: 0;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 150%;
+     letter-spacing: 0.03em;
+     margin-bottom: 50px;
+}
+
+
+
+@media (max-width: 1440px) {
+    .content {
+        padding-top: 11.8vw;
+        padding-bottom: 11.8vw;
+    }
+
+    .content__content {
+        column-gap: 8.6vw;
+        padding-left: 11vw;
+    }
+
+    .content__title {
+        & .content__main-title {
+            margin-bottom: 2.1vw;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .content__decor {
+        display: none;
+    }
+
+    .content__title {
+        margin-bottom: 6vw;
+
+    }
+    .content__content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .content .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .content__content {
+        column-count: 1;
+
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    .content__decor {
+        display: none;
+    }
+
+    .content__title {
+        margin-bottom: 30px;
+        line-height: 120%;
+
+    }
+
+    .content__back-link {
+        margin: 0 auto;
+    }
+}

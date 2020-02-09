@@ -1,6 +1,6 @@
 .skin {
     margin-top: -125px;
-    background: url('../img/skin.jpg.jpg') no-repeat center 0;
+    background: $text-color;
     background-size: cover;
     height: 100vh;
     min-height: 780px;
@@ -9,7 +9,7 @@
     overflow: hidden;
 
     &--main {
-        background-image: url('../img/skin-main.jpg');
+        // background-image: url('../img/skin-main.jpg');
     }
 
     &--360 {
@@ -40,7 +40,7 @@
     font-weight: normal;
     text-align: center;
     padding: 0 20px;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     align-self: flex-end;
 }
 

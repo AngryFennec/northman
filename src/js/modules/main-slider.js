@@ -1,5 +1,5 @@
 (function() {
-
+if ($('.slider')[0]){
   const slider = document.querySelector(`.slider`);
   const slides = slider.querySelectorAll(`.slide`);
   const inners = slider.querySelectorAll(`.slide-inner`);
@@ -23,6 +23,8 @@
 	}
     
   });
+}
+  
 
   var s1 = document.querySelector('.js-gallery-first .swiper-container');
   var s2 = document.querySelector('.js-gallery-second .swiper-container');

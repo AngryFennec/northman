@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'include_script' );
 
 add_action( 'init', 'true_register_post_type_init' );
 add_action( 'init', 'true_register_post_type_portfolio_init' ); 
-add_action( 'init', 'true_register_post_type_blog_init' ); 
+// add_action( 'init', 'true_register_post_type_blog_init' ); 
 
 function true_register_post_type_init() {
 	$labels = array(
@@ -41,6 +41,7 @@ function true_register_post_type_init() {
 		'has_archive' => true, 
 		'menu_position' => 30, 
 		'supports' => array( 'title')
+		'taxonomies' => array( 'category' ),
 	);
 	register_post_type('functions', $args);
 }
@@ -66,36 +67,37 @@ function true_register_post_type_portfolio_init() {
 		'show_ui' => true, 
 		'has_archive' => true, 
 		'menu_position' => 20, 
-		'supports' => array( 'title')
+		'supports' => array( 'title'),
+		'taxonomies' => array( 'category' ),
 	);
 	register_post_type('Portfolio', $args);
 }
 
-function true_register_post_type_blog_init() {
-	$labels = array(
-		'name' => 'Article',
-		'singular_name' => 'Article', 
-		'add_new' => 'add Article',
-		'add_new_item' => 'add new Article',
-		'edit_item' => 'edit Article',
-		'new_item' => 'new Article',
-		'all_items' => 'All Article',
-		'view_item' => 'view Article',
-		'search_items' => 'search Article',
-		'not_found' =>  'not found',
-		'not_found_in_trash' => 'not found',
-		'menu_name' => 'Article' 
-	);
-	$args = array(
-		'labels' => $labels,
-		'public' => true,
-		'show_ui' => true, 
-		'has_archive' => true, 
-		'menu_position' => 20, 
-		'supports' => array( 'title')
-	);
-	register_post_type('Article', $args);
-}
+// function true_register_post_type_blog_init() {
+// 	$labels = array(
+// 		'name' => 'Article',
+// 		'singular_name' => 'Article', 
+// 		'add_new' => 'add Article',
+// 		'add_new_item' => 'add new Article',
+// 		'edit_item' => 'edit Article',
+// 		'new_item' => 'new Article',
+// 		'all_items' => 'All Article',
+// 		'view_item' => 'view Article',
+// 		'search_items' => 'search Article',
+// 		'not_found' =>  'not found',
+// 		'not_found_in_trash' => 'not found',
+// 		'menu_name' => 'Article' 
+// 	);
+// 	$args = array(
+// 		'labels' => $labels,
+// 		'public' => true,
+// 		'show_ui' => true, 
+// 		'has_archive' => true, 
+// 		'menu_position' => 20, 
+// 		'supports' => array( 'title')
+// 	);
+// 	register_post_type('Article', $args);
+// }
 
 add_action('init', function() {
 	pll_register_string('mytheme-header', 'Our Portfolio');

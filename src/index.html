@@ -15,27 +15,41 @@
   <h1>Northman</h1>
   <header class="header">
     <nav class="header__menu">
-      <a href="#" class="header__portfolio-link">Our Portfolio</a>
+      <a href="#blog">Our Portfolio</a>
+      <a href="#slider" >Our Services</a>
+      <a href="#friends" >Our friends</a>
       <div class="header__logo-block">
         <img class="header__logo" src="img/logo.svg">
       </div>
+      <a href="#blog">Blog</a>
+      <a href="#contacts" >Contacts</a>
       <ul>
         <li class="lang-item lang-item-2 lang-item-en lang-item-first current-lang"><a lang="en-US" hreflang="en-US" href="http://logvinb9.beget.tech/wp/virtual-reality/">en</a></li>
         <li class="lang-item lang-item-5 lang-item-fi"><a lang="fi" hreflang="fi" href="http://logvinb9.beget.tech/wp/virtual-reality-2/">fi</a></li>
         <li class="lang-item lang-item-9 lang-item-sv"><a lang="sv-SE" hreflang="sv-SE" href="http://logvinb9.beget.tech/wp/virtual-reality-3/">sv</a></li>
         <li class="lang-item lang-item-13 lang-item-no"><a lang="nb-NO" hreflang="nb-NO" href="http://logvinb9.beget.tech/wp/virtual-reality-4/">no</a></li>
       </ul>
-      <!-- <ul class="header__lang-list">
-        <li class="header__lang"><a href="?lang=en">EN</a></li>
-        <li class="header__lang"><a href="?lang=sv">SV</a></li>
-        <li class="header__lang"><a href="?lang=fi">FI</a></li>
-        <li class="header__lang"><a href="?lang=no">NO</a></li>
-      </ul> -->
       <button class="header__burder" type="button"><img src="img/burger.svg" alt=""></button>
     </nav>
   </header>
   <main class="main">
     <section class="skin skin--main">
+      <style>
+        iframe {
+          display: none;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.35) translateX(50px);
+        }
+        @media(max-width: 1025px) {
+            iframe {
+              display: none;
+            }
+          }
+      </style>
+      <iframe src="https://player.vimeo.com/video/389792443?autoplay=1&color=ffffff&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div class="wrapper">
         <div class="skin__text-block">
           <h2 class="skin__title">Digital studio Northman&nbsp;VR</h2>
@@ -70,7 +84,7 @@
         <a href="/portfolio/" class="about__portfolio-link"> See the examples</a>
       </div>
     </section>
-	<section class="slider gallery">
+	<section id="slider" class="slider gallery">
 		<div class="slide">
 			<div class="slide-inner" style="z-index:25">
 				<div class="gallery__item-text">
@@ -204,7 +218,7 @@
 		</div>
 
   </section>
-  <section class="friends">
+  <section id="friens" class="friends">
     <div class="wrapper">
       <h2 class="friends__title">Our friends</h2>
       <ul class="friends__list">
@@ -227,7 +241,7 @@
       </ul>
     </div>
   </section>
-  <section class="blog">
+  <section id="blog" class="blog">
     <div class="wrapper">
       <h2 class="blog__title">Digital Blog</h2>
       <ul class="blog__list">
@@ -265,7 +279,7 @@
     </div>
   </section>
 
-    <section class="feadback">
+    <section id="contacts" class="feadback">
       <div class="wrapper">
         <h2 class="feadback__header">Let’s discuss your project</h2>
         <form class="feadback__form" action="#">
@@ -322,5 +336,31 @@
   <script src="js/main.js"></script>
 
 </body>
-
+<script>
+  $('a[href="#blog"]').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#blog').offset().top
+    }, 400)
+  })
+  $('a[href="#slider"]').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#slider').offset().top
+    }, 400)
+  })
+  $('a[href="#friends"]').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#friends').offset().top
+    }, 400)
+  })
+  $('a[href="#blog"]').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#blog').offset().top
+    }, 400)
+  })
+  $('a[href="#contacts"]').on('click', function(){
+    $('html, body').animate({
+      scrollTop: $('#contacts').offset().top
+    }, 400)
+  })
+</script>
 </html>

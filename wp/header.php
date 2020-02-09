@@ -31,8 +31,3 @@
       <button class="header__burder" type="button"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>burger.svg" alt=""></button>
     </nav>
   </header>
-  <?php if ($_COOKIE['agree'] !== 'yes') :?>
-            <section class="cookie">
-              <p>To make this site work properly we <a href="#">use cookies</a>.<a class="cookie__agree" href="#">Accept</a></p>
-            </section>
-  <?php endif;?>

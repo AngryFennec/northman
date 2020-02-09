@@ -1,6 +1,22 @@
 <?php get_header();?>
   <main class="main">
     <section class="skin skin--main">
+    <style>
+        iframe {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.35) translateX(50px);
+        }
+        
+        @media(max-width: 1025px) {
+            iframe {
+              display: none;
+            }
+          }
+      </style>
+      <iframe src="https://player.vimeo.com/video/389792443?autoplay=1&color=ffffff&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div class="wrapper">
         <div class="skin__text-block">
           <h2 class="skin__title"><?php the_field('main_title');?></h2>
@@ -55,7 +71,7 @@
 								</div>
 							</div>
 						</div>
-							<span class="js-current" style="position: absolute; bottom: -40px">01</span>
+							<span class="js-current" >01</span>
 							<span class="js-all">03</span>
 							<div class="swiper-pagination swiper-pagination-first">
 						</div>
