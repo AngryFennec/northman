@@ -55,13 +55,28 @@ color: #FFFFFF;
     display: none;
 }
 
+.header__logo-block {
+  margin-left: 7%;
+  margin-right: 10%;
+}
+
+.header__menu-item {
+  width: 110px;
+}
+
 .header__blog-link {
   width: 70px;
 }
 
+
 @media (max-width: 960px) {
   .header__blog-link {
     display: none;
+  }
+
+  .header__logo-block {
+    margin-left: 5%;
+    margin-right: 7%;
   }
 }
 
