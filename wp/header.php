@@ -21,9 +21,18 @@
       <?php else :?>
         <a href="<?php echo get_permalink(pll_get_post(386));?>" class="header__portfolio-link"><?php pll_e('Our Portfolio'); ?></a>
       <?php endif;?>
+      <?php if($pagename === ""):?>
+      <a class="header__menu-item" href="#slider" ><?php pll_e('Our Services'); ?></a>
+      <a class="header__menu-item header__menu-item--friends" href="#friends" ><?php pll_e('Our friends'); ?></a>
+      <?php endif;?>
       <div class="header__logo-block">
         <a href="/"><img class="header__logo" src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>logo.svg" alt="logo"></a>
       </div>
+      <?php if($pagename === ""):?>
+      <a  class="header__menu-item header__blog-link" href="#blog"><?php pll_e('Blog'); ?></a>
+      <a class="header__menu-item" href="#contacts"><?php pll_e('Contacts'); ?></a>
+      <?php endif;?>
+
       <ul><?php pll_the_languages([
           'display_names_as' => 'slug',
           'hide_if_no_translation' => 1

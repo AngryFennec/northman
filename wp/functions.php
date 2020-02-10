@@ -40,7 +40,7 @@ function true_register_post_type_init() {
 		'show_ui' => true,
 		'has_archive' => true, 
 		'menu_position' => 30, 
-		'supports' => array( 'title')
+		'supports' => array( 'title'),
 		'taxonomies' => array( 'category' ),
 	);
 	register_post_type('functions', $args);
@@ -110,6 +110,15 @@ add_action('init', function() {
 	pll_register_string('mytheme-feadback', 'DS');
 	pll_register_string('mytheme-feadback', '360');
 	pll_register_string('mytheme-feadback', 'See All Projects');
+	pll_register_string('mytheme-feadback', 'schedule a call for');
+	pll_register_string('mytheme-feadback', 'or contact us');
+	pll_register_string('mytheme-feadback', 'minutes');
+
+
+	pll_register_string('mytheme-feadback', 'Our Services');
+	pll_register_string('mytheme-feadback', 'Our friends');
+	pll_register_string('mytheme-feadback', 'Blog');
+	pll_register_string('mytheme-feadback', 'Contacts');
 });
 
 ?>

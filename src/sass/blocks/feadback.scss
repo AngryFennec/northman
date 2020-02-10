@@ -1,3 +1,37 @@
+.cf7sg-container {
+    display: flex;
+}
+
+.feadback__adress-block {
+    margin-top: -26px;
+    font-size: 16px;
+    line-height: 159.5%;
+    letter-spacing: 0.03em;
+    padding-left: 30px;
+}
+.feadback__contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    & span {
+        width: 100%;
+    }
+}
+
+.feadback__contacts-block {
+    display: flex;
+    flex-direction: column;
+}
+.feadback__social-list {
+    display: flex;
+    width: 170px;
+    margin-bottom: 15px;
+}
+
+.feadback__email {
+    border-bottom: 1px solid $text-color;
+}
 .feadback {
     color: $text-color;
     display: flex;
@@ -21,7 +55,8 @@
     margin-bottom: 80px;
 }
 
-.feadback__wrapper {
+.feadback__wrapper,
+.cf7sg-container {
     display: flex;
 }
 
@@ -58,7 +93,7 @@
 }
 .feadback__schedule span {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
     font-size: 16px;
     line-height: 150%;
     margin-top: 5px;
@@ -85,7 +120,7 @@
 .feadback__contacts span {
     display: block;
     margin-top: 40px;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
@@ -100,14 +135,15 @@
 
     letter-spacing: 0.035em;
     color: inherit;
+    margin-bottom: 15px;
 
-    &:first-of-type {
-        margin-right: 87px;
-    }
+    // &:first-of-type {
+    //     margin-right: 87px;
+    // }
 
-    &:last-of-type {
-        border-bottom: 1px solid $text-color;
-    }
+    // &:last-of-type {
+    //     border-bottom: 1px solid $text-color;
+    // }
 }
 
 
@@ -133,9 +169,9 @@
 
 .feadback__social-list
 {
-    margin-left: auto;
-    margin-top: -30px;
-    margin-bottom: 80px;
+    // margin-left: auto;
+    // margin-top: -30px;
+    // margin-bottom: 80px;
 }
 
 @media (max-width: 1440px) {
@@ -153,6 +189,16 @@
     .feadback__wrapper {
         flex-direction: column;
         align-items: center;
+    }
+
+    .cf7sg-container  {
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #cf7sg-form-contact-form-1 {
+        width: 100%;
     }
 
     .feadback__header {
@@ -176,11 +222,6 @@
             margin-bottom: 20px;
         }
     }
-
-    .feadback__button-wraper {
-        margin-bottom: 75px;
-   }
-
 
     .feadback__wrapper span {
         margin-bottom: 30px;
@@ -218,6 +259,10 @@
 }
 
 @media (max-width: 500px) {
+    .feadback__adress-block {
+        padding-left: 0;
+        margin-top: 0;
+    }
     .feadback__field {
         min-width: 280px;
     }

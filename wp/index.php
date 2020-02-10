@@ -1,21 +1,6 @@
 <?php get_header();?>
   <main class="main">
     <section class="skin skin--main">
-    <style>
-        iframe {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transform: scale(1.35) translateX(50px);
-        }
-        
-        @media(max-width: 1025px) {
-            iframe {
-              display: none;
-            }
-          }
-      </style>
       <iframe src="https://player.vimeo.com/video/389792443?autoplay=1&color=ffffff&loop=1&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
       <div class="wrapper">
         <div class="skin__text-block">
@@ -24,10 +9,10 @@
 
         </div>
         <ul class="skin__social-list social-list">
-        <li><a href="//www.facebook.com/virtualnorthman/">FB</a></li>
-        <li><a href="//www.instagram.com/virtualnorthman/">IG</a></li>
-        <li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg">YT</a></li>
-        <li><a href="//www.linkedin.com/company/digital-northman-ab/">LN</a></li>
+        <li><a href="//www.facebook.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/header-fb.svg';?>" alt="facebook"></a></li>
+        <li><a href="//www.instagram.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/header-insta.svg';?>" alt="instagram"></a></li>
+        <li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg"><img src="<?php echo  get_template_directory_uri() . '/assets/img/header-youtube.svg';?>" alt="youtube"></a></li>
+        <li><a href="//www.linkedin.com/company/digital-northman-ab/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/header-ln.svg';?>" alt="linkedin"></a></li>
         </ul>
 </div>  
         <img class="wheel-skin" src="<?php echo  get_template_directory_uri() . '/assets/img/round-white.png';?>" alt="wheel">
@@ -44,7 +29,7 @@
         <a href="<?php echo get_permalink(pll_get_post(386));?>" class="about__portfolio-link"><?php the_field('about_link-text');?></a>
       </div>
     </section>
-    <section class="slider gallery">
+    <section id="slider" class="slider gallery">
 		<div class="slide">
 			<div class="slide-inner" style="z-index:25">
 				<div class="gallery__item-text">
@@ -167,7 +152,7 @@
 		</div>
 
 	</section>
-    <section class="friends">
+    <section id = "friends" class="friends">
       <div class="wrapper">
         <h2 class="friends__title"><?php the_field('friends_title');?></h2>
         <ul class="friends__list">
@@ -190,7 +175,7 @@
         </ul>
       </div>
 	</section>
-	<section class="blog">
+	<section id="blog" class="blog">
     <div class="wrapper">
       <h2 class="blog__title">Digital Blog</h2>
       <ul class="blog__list">
@@ -227,12 +212,40 @@
       </ul>
     </div>
   </section>
-    <section class="feadback">
-      <div class="wrapper">
-        <h2 class="feadback__header"><?php pll_e('Let’s discuss your project'); ?></h2>
-		<?php echo do_shortcode( '[cf7form cf7key="contact-form-1"]' ); ?>
-		
-      </div>
+    <section id= "contacts" class="feadback">
+      	<div class="wrapper">
+        	<h2 class="feadback__header"><?php pll_e('Let’s discuss your project'); ?></h2>
+        	<div class="feadback__wrapper">
+            	<?php echo do_shortcode( '[cf7form cf7key="contact-form-1"]' ); ?>
+            
+             	<div class="feadback__text-block">
+                	<div class="feadback__schedule">
+                  		<span><?php pll_e('schedule a call for'); ?>:</span>
+						  <a href="<?php echo get_permalink(pll_get_post(664));?>">15 <?php pll_e('minutes'); ?></a>
+						  <a href="<?php echo get_permalink(pll_get_post(664));?>">30 <?php pll_e('minutes'); ?></a>
+                	</div>
+            		<div class="feadback__contacts">
+             			<span><?php pll_e('or contact us'); ?>:</span>
+                  		<div class="feadback__contacts-block">
+							<ul class="feadback__social-list social-list">
+								<li><a href="//www.facebook.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-fb.svg';?>" alt="facebook"></a></li>
+								<li><a href="//www.instagram.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-insta.svg';?>" alt="instagram"></a></li>
+								<li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-youtube.svg';?>" alt="youtube"></a></li>
+								<li><a href="//www.linkedin.com/company/digital-northman-ab/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-linkedin.svg';?>" alt="linkedin"></a></li>
+							</ul>
+                    		<a href="tel:+46708478122">+46&nbsp;70&nbsp;847&nbsp;8122</a>
+                    		<a href="mailto:info@northmanvr.com" class="feadback__email">info@northmanvr.com</a>
+                  		</div>
+                  		<div class="feadback__adress-block">
+							<p>
+							Northman VR <br>c/o Impact Hub Stockholm <br> Jakobsbergsgatan 22 <br> 111 44 Stockholm Sweden <br>VAT:SE559149424901
+							</p>
+                 		 </div>
+            		</div>
+	       		 </div>
+        	</div>
+
+	  </div>
     </section>
     <style>
         .skin--main {
