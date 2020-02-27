@@ -2,10 +2,10 @@
 
 
 (function () {
-  console.log('Here is your code');
+
 if ($('.process')[0]) {
   // $('.process').css('opacity', 0);
-  $('.process').css('padding-top', '5 0vh');
+  // $('.process').css('padding-top', '50vh');
   $('.process').addClass('transparent');
   var processTop = $('.process').offset().top - 400; 
   var flag = 0;

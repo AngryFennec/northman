@@ -7,7 +7,8 @@
         <a class="footer__logo" href="/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/' ;?>logo-dark.svg" alt="logo"></a>
       <?php endif;?>
       
-      <a href="/pricacy_policy"><?php pll_e('Privacy Policy'); ?></a>
+      <a href="/en/privacy-policy/"><?php pll_e('Privacy Policy'); ?></a>
+
     </div>
   </footer>
   <?php wp_footer() ?>
