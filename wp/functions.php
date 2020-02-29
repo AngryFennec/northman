@@ -119,6 +119,7 @@ add_action('init', function() {
 	pll_register_string('mytheme-feadback', 'Our friends');
 	pll_register_string('mytheme-feadback', 'Blog');
 	pll_register_string('mytheme-feadback', 'Contacts');
+	pll_register_string('mytheme-feadback', 'Terms of Service');
 });
 
 ?>
