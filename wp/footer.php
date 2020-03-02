@@ -14,8 +14,17 @@
   <?php wp_footer() ?>
 
   <?php if ($pagename === 'calendar' || $pagename === 'calendar-2' || $pagename === 'calendar-3' || $pagename === 'calendar-4') :?>
-    <script type="text/javascript" src="http://assets.calendly.com/assets/external/widget.js"></script> 
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script> 
   <?php endif; ?>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159096155-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-159096155-1');
+</script>
 </body>
 
 </html>
