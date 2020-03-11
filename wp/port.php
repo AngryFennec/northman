@@ -91,9 +91,9 @@
             
              	<div class="feadback__text-block">
                 	<div class="feadback__schedule">
-                  		<span><?php pll_e('schedule a call for'); ?>:</span>
-						  <a href="<?php echo get_permalink(pll_get_post(664));?>">15 <?php pll_e('minutes'); ?></a>
-						  <a href="<?php echo get_permalink(pll_get_post(664));?>">30 <?php pll_e('minutes'); ?></a>
+                  		<!-- <span><?php //pll_e('schedule a call for'); ?>:</span> -->
+						  <a href="<?php echo get_permalink(pll_get_post(664));?>"><?php pll_e('minutes'); ?></a>
+						  <!-- <a href="<?php //echo get_permalink(pll_get_post(664));?>">30 <?php //pll_e('minutes'); ?></a> -->
                 	</div>
             		<div class="feadback__contacts">
              			<span><?php pll_e('or contact us'); ?>:</span>

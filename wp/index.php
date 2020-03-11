@@ -212,7 +212,7 @@
       </ul>
     </div>
   </section>
-    <section id= "contacts" class="feadback">
+  <section id= "contacts" class="feadback">
       	<div class="wrapper">
         	<h2 class="feadback__header"><?php pll_e('Let’s discuss your project'); ?></h2>
         	<div class="feadback__wrapper">
@@ -220,15 +220,15 @@
             
              	<div class="feadback__text-block">
                 	<div class="feadback__schedule">
-                  		<span><?php pll_e('schedule a call for'); ?>:</span>
-						  <a href="<?php echo get_permalink(pll_get_post(664));?>">15 <?php pll_e('minutes'); ?></a>
-						  <a href="<?php echo get_permalink(pll_get_post(664));?>">30 <?php pll_e('minutes'); ?></a>
+                  		<!-- <span><?php //pll_e('schedule a call for'); ?>:</span> -->
+						  <a href="<?php echo get_permalink(pll_get_post(664));?>"><?php pll_e('minutes'); ?></a>
+						  <!-- <a href="<?php //echo get_permalink(pll_get_post(664));?>">30 <?php //pll_e('minutes'); ?></a> -->
                 	</div>
             		<div class="feadback__contacts">
              			<span><?php pll_e('or contact us'); ?>:</span>
                   		<div class="feadback__contacts-block">
 							<ul class="feadback__social-list social-list">
-								<li><a href="//www.facebook.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-fb.svg';?>" alt="facebook"></a></li>
+              <li><a href="//www.facebook.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-fb.svg';?>" alt="facebook"></a></li>
 								<li><a href="//www.instagram.com/virtualnorthman/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-insta.svg';?>" alt="instagram"></a></li>
 								<li><a href="//www.youtube.com/channel/UCfr9ZTQRygqz8fFzoxxeICg"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-youtube.svg';?>" alt="youtube"></a></li>
 								<li><a href="//www.linkedin.com/company/digital-northman-ab/"><img src="<?php echo  get_template_directory_uri() . '/assets/img/footer-linkedin.svg';?>" alt="linkedin"></a></li>
@@ -246,7 +246,6 @@
         	</div>
 
 	  </div>
-    </section>
     <style>
         .skin--main {
           background: url('<?php the_field('skin');?>') no-repeat center 0; 

@@ -1,13 +1,16 @@
+.cf7-smart-grid {
+    padding-top: 10px;
+}
 .cf7sg-container {
     display: flex;
 }
 
 .feadback__adress-block {
-    margin-top: -26px;
+    margin-top: 0;
     font-size: 16px;
     line-height: 159.5%;
     letter-spacing: 0.03em;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 .feadback__contacts {
     display: flex;
@@ -89,7 +92,7 @@
     margin-left: 0;
     display: flex;
     flex-direction: column;
-    margin-left: 118px;
+    margin-left: 158px;
 }
 .feadback__schedule span {
     display: block;
@@ -106,6 +109,7 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 150%;
+    // margin-top: -50px;
     /* or 45px */
 
     letter-spacing: 0.035em;
@@ -119,7 +123,7 @@
 }
 .feadback__contacts span {
     display: block;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 150%;
@@ -171,7 +175,7 @@
 {
     // margin-left: auto;
     // margin-top: -30px;
-    // margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: 1440px) {
